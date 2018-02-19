@@ -1,0 +1,15 @@
+Paloma Sastre
+
+Diseño Digital 3º año
+
+Facultad de Diseño, Universidad del Desarrollo
+
+2015
+
+El examen consiste en una visualización de datos de manera impresa, en la que se muestran los datos climáticos de Beijing, China. Se usaron 10 años - 1997, 1998, 2001, 2002, 2003, 2006, 2008, 2010, 2012 y 2014 - para poder ver cómo ha afectado el cambio climático a esta ciudad. En un principio, la intensión era utilizar bases de datos cada 2 años; sin embargo, muchas de las bases de datos estaban erróneas, por lo que se tuvo que buscar otras bases que estuvieran correctas; es por esto que hay años que son continuos y hay otros que no lo son. 
+
+Se utilizaron 6 variables, las cuales fueron temperatura máxima y mínima, humedad máxima, visibilidad máxima, velocidad de ráfagas, y eventos. Para 5 de estas variables, se usaron “maps” ya que los números originales que se entregaban eran o muy bajos o muy altos entonces no servían tan bien para dibujar. De esta manera, se generó un nuevo rango para los datos que se usaban. Además, se utilizó un “if” para poder usar la variables de eventos ya que esta era un “string”; entonces, al ser palabras en vez de números, se tenía que asignar un valor a las palabras.
+
+En la visualización, se puede ver que los días del año están separados en 122 columnas y 3 filas, por lo que los datos se ven de manera horizontal. Además, en cada uno de los días hay líneas turquesas o rosadas que van hacia abajo o hacia arriba respectivamente, las cuales muestran la temperatura mínima y la temperatura máxima de aquel día. Mientras más largas sean esas líneas, la temperatura habría sido más extrema. Por ejemplo, mientras más largas sean las líneas turquesas, significa que la temperatura mínima fue más baja, o sea que hizo más frío. Al contrario pasa con la línea rosada, ya que mientras más larga sea, significa que hizo más calor. En el extremo inferior de las líneas de la temperatura mínima, se encuentran elipses amarillas las cuales representan si en esos días hubo un evento - nieve, niebla, lluvia, niebla-nieve, niebla-lluvia, lluvia-tormenta, tormenta, niebla-lluvia-tormenta - por lo que si no están presentes esas elipses, significa que ese día no hubo ninguno de los eventos mencionados anteriormente. También, hay elipses grises en el centro de cada día, las cuales representan la humedad máxima con su tamaño, la visibilidad máxima con la opacidad de su color, y la velocidad de las ráfagas con su “stroke”. De esta manera, mientras más grandes sean, mayor habrá sido la humedad máxima; mientras más transparentes sean, mayor visibilidad hubo ese día; y mientras más rápida fue la velocidad de las ráfagas, el “stroke” será mayor.
+
+En la impresión, las visualizaciones fueron puestas de esa forma ya que lo que se quería lograr era mostrar el cambio que hubo de las variables utilizadas, durante los 10 años seleccionados. No se imprimieron todas hacia abajo, ya que al utilizar dos columnas, era más fácil comparar entre los años. Si hubiera sido solo una columna, habría sido muy difícil comparar la visualización del año 1997 con la del año 2014.

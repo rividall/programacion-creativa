@@ -1,0 +1,7 @@
+Examen final Expresión digital II
+
+En este examen, tome la base de dato del clima de doce años de rio de janeiro brazil de forma circular.
+En cada año tome dos variables del clima y con estas dibuje distintas figuras como, circulos, rectangulos y lineas. Estas figuaras 
+varian en tamaño y posición segun los distintos valores de la base de datos, utilizando factores de trigonometria, como el seno() 
+y coseno() y tangente, para lograr tener un radio con el cual este ordena los 365 días del año de forma circular y pueda leer las
+distintas filas y columnas y visualizarla de forma circular.
