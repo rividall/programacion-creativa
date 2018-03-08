@@ -17,4 +17,6 @@ Configuragión del flujo de trabajo (herramientas):
 
 [Typora](https://typora.io/)
 
-[Slack](https://join.slack.com/t/pcudd18/shared_invite/enQtMzI1NzQ2OTI2OTQ5LTA4NzkxMmE2NDYyMDhkOWI2ZjEwMTUxNDk0ODE0OTE2NzAyODhkMTRmYjYxM2U5ODg1YWRlOGE1YzAwZDU1ZDg) (entrar con correo udd)
+[Slack](https://join.slack.com/t/pcudd18/shared_invite/enQtMzI1NzQ2OTI2OTQ5LTA4NzkxMmE2NDYyMDhkOWI2ZjEwMTUxNDk0ODE0OTE2NzAyODhkMTRmYjYxM2U5ODg1YWRlOGE1YzAwZDU1ZDg) (entrar con correo udd)  
+
+Nueva Información
