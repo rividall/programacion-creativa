@@ -1,4 +1,5 @@
 //archivo principal
+//comentario
 ArrayList<Formas> listadeobjetos = new ArrayList<Formas>();
 ArrayList<Formasdos> lista = new ArrayList<Formasdos>();
 Formas f;
