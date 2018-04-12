@@ -3,7 +3,7 @@ Circulos c;
 
 
 void setup(){
-  size(500,500);
+  size(600,600);
   for (int i = 0; i < 4; i++){
     c = new Circulos();
     lista.add(c);
