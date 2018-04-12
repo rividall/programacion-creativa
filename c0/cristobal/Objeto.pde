@@ -24,8 +24,8 @@ class Objeto {
     velx=random(-5, 5);//velocidad eje x aleatoria entre -5 y 5
     vely=random(-5, 5);//velocidad eje y aleatoria entre -5 y 5
 
-    posX += velx; //aceleracion
-    posY += vely;//aceleracion
+    posX += velx; //aceleración
+    posY += vely;//aceleración
     tamano = half*2;// tamaño de la figura sera el doble del valor de half
   }
 
@@ -49,24 +49,24 @@ class Objeto {
 
   void movimiento() {// las figuras se moveran
 
-    posX += velx; //aceleracion eje x
-    posY += vely;//aceleracion eje y
+    posX += velx; //aceleración eje x
+    posY += vely;//aceleración eje y
   }
 
   void rebote() {
-    if (posX > width-half && velx >0 ) {//si las figuras llegan al borde derecho estas rebotaran.
+    if (posX > width-half && velx >0 ) {//si las figuras llegan al borde derecho estas rebotarán.
       posX = width-half;
       velx *= -1;
     }
-    if (posX < half ) {//si las figuras llegan al borde izquierdo rebotaran
+    if (posX < half ) {//si las figuras llegan al borde izquierdo rebotarán
       posX = half;
       velx = 10;
     }
-    if (posY > height-half && vely >0) {//si llegan al borde inferior rebotaran
+    if (posY > height-half && vely >0) {//si llegan al borde inferior rebotarán
       posY = height -half;
       vely *= -1;
     }
-    if (posY < half ) {// si llegan al borde superior rebotaran
+    if (posY < half ) {// si llegan al borde superior rebotarán
       posY = half;
       vely = 10;
     }
