@@ -1,11 +1,11 @@
 /*Certamen 0
  Josefa Méndez Gómez
  5 / 4 / 2018
- Se presenta un sketch cuyas orrillas son similares a las ondas de los parlantes
- que represetan el ritmo de ella. Cada barra es creada por un solo rectangulo dependiendo
- de la posicion de ella y se le aplica un for loop para repetir la secuencia en todas las orillas.
- Además, los colores estan establecidos en un array para cear una paleta de colores, donde las
- ondas de las orrillas tendran colores randoms de esa paleta cada vez que se ejecute
+ Se presenta un sketch cuyas orillas son similares a las ondas de los parlantes
+ que represetan el ritmo de ella. Cada barra es creada por un solo rectángulo dependiendo
+ de la posición de ella y se le aplica un for loop para repetir la secuencia en todas las orillas.
+ Además, los colores estan establecidos en un array para crear una paleta de colores, donde las
+ ondas de las orillas tendran colores aleatorios de esa paleta cada vez que se ejecute
  */
 
 ArrayList <Membrana> nMembranas = new ArrayList(); //creo el ArrayList para mi clase
@@ -19,12 +19,12 @@ void setup() {
   noStroke(); //Defino que no tendre color de lineas
 
   for (int i = 0; i < width; i++) { //Creo un for loop para poder repetir las figuras de mi for loop
-    //Inicializo mi clase, establesco los parametros respectivamente según todas mis opciones de constructor
+    //Inicializo mi clase, establezco los parámetros respectivamente según todas mis opciones de constructor
     md = new Membrana(i * 50, height, 50, 0, 0, 0, random(-98), 0, random(1, 3), -1, 0, 0, 0);
     mu = new Membrana (i * 50, 0, 50, 0, 0, 0, 0, random(98), random(1, 3), 0, -1, 0, 0);
     ml = new Membrana (0, i * 50, 0, random(97), 0, 50, 0, 0, random(1, 3), 0, 0, -1, 0 ) ;
     mr = new Membrana (width, i * 50, 0, 0, random(-98), 50, 0, 0, random(1, 3), 0, 0, 0, -1);
-    // se agregan mis posibles clases a sus respectivas listas
+    // se agregan mis posibles objetos a sus respectivas listas
     nMembranas.add(md);
     nMembranas.add(mu);
     nMembranas.add(ml);
@@ -33,29 +33,29 @@ void setup() {
 }
 
 void draw() {
-  background(230); //tendre un color de fondo casi blanco
+  background(230); //tendré un color de fondo casi blanco
 
-  // establesco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se veran las siguiente funciones
   for (Membrana md : nMembranas) {
-    md.dibujo(); //se mostrara mi dibujo de la barra de abajo
+    md.dibujo(); //se mostrará mi dibujo de la barra de abajo
     md.movimientoY(); //establece el movimiento de la barra de abajo
   }
 
-  // establesco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se veran las siguiente funciones
   for (Membrana mu : nMembranas) {
-    mu.dibujo(); //se mostrara mi dibujo de la barra de arriba
+    mu.dibujo(); //se mostrará mi dibujo de la barra de arriba
     mu.movimientoY2(); //establece el movimiento de la barra de arriba
   }
 
-  // establesco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se veran las siguiente funciones
   for (Membrana ml : nMembranas) {
-    ml.dibujo(); //se mostrara mi dibujo de la barra de la izquiersa
+    ml.dibujo(); //se mostrará mi dibujo de la barra de la izquiersa
     ml.movimientoX(); //establece el movimiento de la barra de la izquierda
   }
 
-  // establesco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se veran las siguiente funciones
   for (Membrana mr : nMembranas) {
-    mr.dibujo(); //se mostrara mi dibujo de la barra de la derecha
+    mr.dibujo(); //se mostrará mi dibujo de la barra de la derecha
     mr.movimientoX2();//establece el movimiento de la barra de la derecha
   }
 
