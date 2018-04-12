@@ -55,7 +55,7 @@ class Formas { //nombre de la clase
     a=a+vel;//la variable a es igual a su valor más la velocidad
   }
 
-  void circulos() {//círculos negros sin borde con valor de ancho y alto al azar
+  void circulos() {//círculos negros sin borde con posición de ancho y alto al azar
     frameRate(10);
     noStroke();
     fill(0);
