@@ -35,25 +35,25 @@ void setup() {
 void draw() {
   background(230); //tendré un color de fondo casi blanco
 
-  // establezco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se verán las siguiente funciones
   for (Membrana md : nMembranas) {
     md.dibujo(); //se mostrará mi dibujo de la barra de abajo
     md.movimientoY(); //establece el movimiento de la barra de abajo
   }
 
-  // establezco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se verán las siguiente funciones
   for (Membrana mu : nMembranas) {
     mu.dibujo(); //se mostrará mi dibujo de la barra de arriba
     mu.movimientoY2(); //establece el movimiento de la barra de arriba
   }
 
-  // establezco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se verán las siguiente funciones
   for (Membrana ml : nMembranas) {
     ml.dibujo(); //se mostrará mi dibujo de la barra de la izquiersa
     ml.movimientoX(); //establece el movimiento de la barra de la izquierda
   }
 
-  // establezco que para mi lista membrana se veran las siguiente funciones
+  // establezco que para mi lista membrana se verán las siguiente funciones
   for (Membrana mr : nMembranas) {
     mr.dibujo(); //se mostrará mi dibujo de la barra de la derecha
     mr.movimientoX2();//establece el movimiento de la barra de la derecha
