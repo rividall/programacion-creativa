@@ -14,7 +14,7 @@ void setup () {
   size(400, 400); //tamaño del canvas
 
   for (int i = 0; i < 50; i++) {//parte en 0 y se va sumando 1 hasta llegar a 50
-    f = new Formas(random(width), random (height)); //inicializar lista y agregar variables presentes en la clase
+    f = new Formas(random(width), random(height)); //inicializar lista y agregar variables presentes en la clase
     listado.add(f); //se agrega la clase f a la lista
   }
 }
@@ -25,7 +25,7 @@ void draw () {
   background(255);
 
   for (Formas f : listado) {
-    //inicializar los objetos de la clase
+    //usar los objetos llamando métodos de la clase
     f.triangulo();
     f.movizq();
     f.triangulodos();
