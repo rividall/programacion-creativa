@@ -38,12 +38,12 @@ class Formas { //nombre de la clase
   }
   //movimiento de los triángulos de derecha a izquierda
   void movizq () {
-    x = x-vel; //x es cero, pero se le va sumando vel, es decir 1px cada vez
+    x -= vel; //x es cero, pero se le va sumando vel, es decir 1px cada vez
   }
 
   void triangulodos() {
     noStroke();
-    fill(eleccionColor, random(300));//amarillo
+    fill(eleccionColor, random(255));//amarillo 255 es el máximo en los canales de color
     triangle(a, y, a, y+25, a+50, y+10);
     if (a > 400) {
       a = 0;
@@ -52,7 +52,7 @@ class Formas { //nombre de la clase
 
   //movimiento de los triangulos de izquierda a derecha
   void movder() {
-    a=a+vel;//la variable a es igual a su valor más la velocidad
+    a += vel;//la variable a es igual a su valor más la velocidad
   }
 
   void circulos() {//círculos negros sin borde con posición de ancho y alto al azar
@@ -60,7 +60,7 @@ class Formas { //nombre de la clase
     noStroke();
     fill(0);
     for (float i = 0; i < 400; i++) {//en cada loop parte desde 0 a 400 agregando la figura en cada pixel
-      float x= random(width);
+      float x = random(width);
       float y = random(height);
       ellipse(x, y, 15, 15);
     }
