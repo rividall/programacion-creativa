@@ -14,8 +14,8 @@ void draw(){
     for(int j = 0; j<filas; j++){
     fill(0);
     pushMatrix();
-    translate(200,200);
-    ellipse(i*50, j*100, 10, 10);
+    translate(200,250);
+    ellipse(i*50, j*125, 10, 10);
     popMatrix();
     }
   }
