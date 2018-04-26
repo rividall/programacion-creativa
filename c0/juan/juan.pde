@@ -2,42 +2,42 @@
 
 
 /////// TODA ESTO ES SOLO PARA EL COLOR //////
-ArrayList<Particula> lista = new ArrayList<Particula>();
+ArrayList < Particula > lista = new ArrayList < Particula > ();
 
 
 Particula p;
-int n,m;
+int n, m;
 
-void setup(){
-  size(800,600);
-  for (int i=0; i<100;i++) {
-    p = new Particula(i);
-    lista.add(p);
+void setup() {
+    size(800, 600);
+    for (int i = 0; i < 100; i++) {
+        p = new Particula(i);
+        lista.add(p);
 
-  }
+    }
 
-  for (int i=0; i<100;i++) {
-    p = new Particula(i);
-    lista.add(p);
+    for (int i = 0; i < 100; i++) {
+        p = new Particula(i);
+        lista.add(p);
 
-  }
+    }
 
 }
 
-void draw(){
-  background(245,242,220);
+void draw() {
+    background(245, 242, 220);
 
-  for (Particula a :lista){
-    a.show();
-    a.mover();
-    a.denuevo();
+    for (Particula a: lista) {
+        a.show();
+        a.mover();
+        a.denuevo();
 
-    if(mousePressed){
-     a.forma();
-     a.crecimiento();
+        if (mousePressed) {
+            a.forma();
+            a.crecimiento();
 
-      }
-}
+        }
+    }
 }
 
 // para interaccion con el teclado usar la tecnica qla del nico
