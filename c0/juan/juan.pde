@@ -16,6 +16,7 @@ void setup() {
         p = new Particula(i);
         lista.add(p);
     }
+    println(-width);
 }
 
 void draw() {
