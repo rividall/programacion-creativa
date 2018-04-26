@@ -1,5 +1,5 @@
 //ArrayList<randm> puente =  new ArrayList<randm> ();
-
+//No hay decripción general de lo que el programa hará
 
 /////// TODA ESTO ES SOLO PARA EL COLOR //////
 ArrayList < Particula > lista = new ArrayList < Particula > ();
@@ -10,38 +10,39 @@ int n, m;
 
 void setup() {
     size(800, 600);
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 200; i++) {
         p = new Particula(i);
         lista.add(p);
 
     }
 
-    for (int i = 0; i < 100; i++) {
-        p = new Particula(i);
-        lista.add(p);
-
-    }
+	// este loop se puede eliminar y solo dejar 200 en el de arriba
+    // for (int i = 0; i < 100; i++) {
+    //     p = new Particula(i);
+    //     lista.add(p);
+    //
+    // }
 
 }
 
 void draw() {
     background(245, 242, 220);
-
-    for (Particula a: lista) {
+	// descripción
+    for (Particula a : lista) {
         a.show();
         a.mover();
         a.denuevo();
 
+		// descripción
         if (mousePressed) {
             a.forma();
             a.crecimiento();
-
         }
     }
 }
 
 // para interaccion con el teclado usar la tecnica qla del nico
-
+// dude!
 
 
 
