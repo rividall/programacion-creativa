@@ -15,6 +15,9 @@ void setup() {
         lista.add(p);
 
     }
+<<<<<<< HEAD
+    println(-width);
+=======
 
 	// este loop se puede eliminar y solo dejar 200 en el de arriba
     // for (int i = 0; i < 100; i++) {
@@ -23,6 +26,7 @@ void setup() {
     //
     // }
 
+>>>>>>> cce176b76b6ce2371c718a20fc0c886fe8b8fb1e
 }
 
 void draw() {
