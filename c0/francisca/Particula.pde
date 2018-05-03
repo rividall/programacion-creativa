@@ -53,7 +53,7 @@ class Particula {
 
     void again() {
         if (x > width || x < 0 || y < 0) {
-            x = random(width);
+            x = random(-width, width);
             y = 700;
             tamano = random(10, 50);
             propioDelObjeto = colores[int(random(3))];
