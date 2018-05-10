@@ -5,7 +5,7 @@ Pruebas:
 
 [Certamen0](https://github.com/disenoudd/programacion-creativa/blob/master/Certamen0.md)
 
-Certamen1
+[Certamen1](https://github.com/disenoudd/programacion-creativa/blob/master/c1/Certamen1.md)
 
 Wiki:
 
