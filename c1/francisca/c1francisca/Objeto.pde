@@ -70,6 +70,7 @@ class Objeto {
 
       g += n * l;
 
+      // debe estar dentro de estructuras de repetición
       arc(350, 350, 100, 100, radians(-g), radians(-g+30));
       arc(350, 350, 150, 150, radians(g), radians(g+60));
       arc(350, 350, 200, 200, radians(-g), radians(-g+90));
