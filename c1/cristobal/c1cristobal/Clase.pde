@@ -30,22 +30,22 @@ class Figura {
 
     translate (mouseX, mouseY);//centro posición del mouse
     pushMatrix();
-    for (int i =0; i<5; i++) {
+    for (int i = 0; i < 5; i++) {
       rotate(r1);
       noFill();
       stroke(0, 255, 0);//Contorno verde
-      rect(x, y, t+i*70, t+i*70);
+      rect(x, y, t+i * 70, t+i * 70);
       if (t == 30) {
-        r1+= 0.1;
+        r1 += 0.1;
       }
     }
     popMatrix();
-    for (int i = 0; i<5; i++) {
+    for (int i = 0; i < 5; i++) {
       strokeWeight(2);
       rotate(r2);
-      rect(x, y, t2+i*60, t2+i*60);
+      rect(x, y, t2+i * 60, t2+i * 60);
       if (t2 == 70) {
-        r2+=0.123;
+        r2 += 0.123;
       }
     }
   }
@@ -53,14 +53,14 @@ class Figura {
   // descripción
   void circulo() {
       // descripción
-    if (mouseX >width/2 && mouseY <height/2) { //cuarta parte de arriba a la derecha
+    if (mouseX > width/2 && mouseY < height/2) { //cuarta parte de arriba a la derecha
       posx = random(-50, 40);
       a = 255;
       s = 0;
       d = 0;
     }
     // descripción
-    else if (mouseX >width/2 && mouseY >height/2) {//cuarta parte de abajo a la derecha
+    else if (mouseX > width/2 && mouseY > height/2) {//cuarta parte de abajo a la derecha
       posx = 30;
       a = 0;
       s = 0;
@@ -74,7 +74,7 @@ class Figura {
       d = 133;
     }
     // descripción
-    else if (mouseX < width/2 && mouseY< height/2) {//cuarta parte de arriba a la izquierda
+    else if (mouseX < width/2 && mouseY < height/2) {//cuarta parte de arriba a la izquierda
       posx = 100;
       a = 17;
       s = 201;
@@ -101,13 +101,13 @@ class Figura {
     translate(width/2, height/2);
 
     // descripción
-    for (int p=0; p<2; p++) {
-      for (int i= 0; i < 8; i++) {
+    for (int p = 0; p < 2; p++) {
+      for (int i = 0; i < 8; i++) {
         fill(255);//blanco
         noStroke();
         rotate(radians(r));
-        ellipse(x1 +p* 125, y1, 20, 20);
-        r+= 0.08;
+        ellipse(x1 + p*125, y1, 20, 20);
+        r += 0.08;
       }
     }
     rotate(radians(r4));//rotación figuras rojas
@@ -118,7 +118,7 @@ class Figura {
     for (int i = 0; i < 9; i++) {
       fill(255, 0, 0); //rojo
       noStroke();
-      ellipse(x1*-2, y1*-2, mouseX/4, mouseY/4);
+      ellipse(x1 * -2, y1 * -2, mouseX/4, mouseY/4);
     }
     popMatrix();
   }
