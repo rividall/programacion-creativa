@@ -30,16 +30,19 @@ class Figura {
 
     translate (mouseX, mouseY);//centro posición del mouse
     pushMatrix();
+    rotate(r1);
     for (int i = 0; i < 5; i++) {
-      rotate(r1);
       noFill();
       stroke(0, 255, 0);//Contorno verde
       rect(x, y, t+i * 70, t+i * 70);
       if (t == 30) {
         r1 += 0.1;
       }
+      // else para r2
     }
     popMatrix();
+
+    pushMatrix();
     for (int i = 0; i < 5; i++) {
       strokeWeight(2);
       rotate(r2);
@@ -47,7 +50,9 @@ class Figura {
       if (t2 == 70) {
         r2 += 0.123;
       }
+      // else para r2
     }
+    popMatrix();
   }
 
   // descripción
