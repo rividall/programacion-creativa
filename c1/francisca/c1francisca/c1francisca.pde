@@ -1,5 +1,9 @@
 //Universidad del Desarrollo - Facultad de Diseño - Francisca Urenda
 
+/*
+Descripción de lo que hace el programa
+*/
+
 ArrayList < Objeto > objeto = new ArrayList < Objeto > ();
 Objeto o;
 
