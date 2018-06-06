@@ -49,24 +49,32 @@ class Figura {
       }
     }
   }
-  void circulo() {
 
+  // descripción
+  void circulo() {
+      // descripción
     if (mouseX >width/2 && mouseY <height/2) { //cuarta parte de arriba a la derecha
       posx = random(-50, 40);
       a = 255;
       s = 0;
       d = 0;
-    } else if (mouseX >width/2 && mouseY >height/2) {//cuarta parte de abajo a la derecha
+    }
+    // descripción
+    else if (mouseX >width/2 && mouseY >height/2) {//cuarta parte de abajo a la derecha
       posx = 30;
-      a =0;
+      a = 0;
       s = 0;
       d = 255;
-    } else if (mouseX < width/2 && mouseY > height/2) {//cuarta parte de abajo a la izquierda
+    }
+    // descripción
+    else if (mouseX < width/2 && mouseY > height/2) {//cuarta parte de abajo a la izquierda
       posx = random(-100, 0);
       a = 199;
-      s= 21;
+      s = 21;
       d = 133;
-    } else if (mouseX < width/2 && mouseY< height/2) {//cuarta parte de arriba a la izquierda
+    }
+    // descripción
+    else if (mouseX < width/2 && mouseY< height/2) {//cuarta parte de arriba a la izquierda
       posx = 100;
       a = 17;
       s = 201;
@@ -76,8 +84,9 @@ class Figura {
     translate(width/2, height/2);
     rotate(radians(r3));
     r3++;
-    for (int o= 0; o<qty; o++) {
-      for (int i=0; i< 8; i++) {
+    // descripción
+    for (int o = 0; o < qty; o++) {
+      for (int i=0; i < 8; i++) {
         noStroke();
         fill(a, s, d);
         ellipse(posx + i * 20, 0, 10, 10);//una elipse alineada con otra.
@@ -86,8 +95,12 @@ class Figura {
     }
     popMatrix();
   }
+
+  // descripción
   void pelotillas() {
     translate(width/2, height/2);
+
+    // descripción
     for (int p=0; p<2; p++) {
       for (int i= 0; i < 8; i++) {
         fill(255);//blanco
@@ -101,12 +114,12 @@ class Figura {
     r4++;
     pushMatrix();
 
+    // descripción
     for (int i = 0; i < 9; i++) {
       fill(255, 0, 0); //rojo
       noStroke();
       ellipse(x1*-2, y1*-2, mouseX/4, mouseY/4);
     }
-
     popMatrix();
   }
 }
