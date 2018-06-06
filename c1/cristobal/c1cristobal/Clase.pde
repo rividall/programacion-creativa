@@ -36,7 +36,7 @@ class Figura {
       stroke(0, 255, 0);//Contorno verde
       rect(x, y, t+i * 70, t+i * 70);
       if (t == 30) {
-        r1 += 0.1;
+        r1 += 0.001; // no hay control
       }
       // else para r2
     }
@@ -48,7 +48,7 @@ class Figura {
       rotate(r2);
       rect(x, y, t2+i * 60, t2+i * 60);
       if (t2 == 70) {
-        r2 += 0.123;
+        r2 += 0.00123; // no hay control
       }
       // else para r2
     }
@@ -59,7 +59,7 @@ class Figura {
   void circulo() {
       // descripción
     if (mouseX > width/2 && mouseY < height/2) { //cuarta parte de arriba a la derecha
-      posx = random(-50, 40);
+      posx = random(-50, 40); // no hay control
       a = 255;
       s = 0;
       d = 0;
@@ -73,7 +73,7 @@ class Figura {
     }
     // descripción
     else if (mouseX < width/2 && mouseY > height/2) {//cuarta parte de abajo a la izquierda
-      posx = random(-100, 0);
+      posx = random(-100, 0); // no hay control
       a = 199;
       s = 21;
       d = 133;
@@ -115,11 +115,13 @@ class Figura {
         r += 0.08;
       }
     }
-    rotate(radians(r4));//rotación figuras rojas
-    r4++;
+
     pushMatrix();
+    // rotate(radians(r4));//rotación figuras rojas
+    // r4++;
 
     // descripción
+    // PORQUE HAY 9 LOOP MOSTRANDO UNA SOLA FIGURA?
     for (int i = 0; i < 9; i++) {
       fill(255, 0, 0); //rojo
       noStroke();

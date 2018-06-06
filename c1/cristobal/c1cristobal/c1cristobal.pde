@@ -40,7 +40,7 @@ void setup() {
 void draw() {
   background(0);
   for (Figura a : lista) {
-    if (funcion1== true) {
+    if (funcion1 == true) {
       a.rectangulo();
     } else if (funcion2 == true) {
       a.circulo();
