@@ -1,9 +1,7 @@
 **Descripción:**
 
-El programa consiste en que al accionar cierta tecla(en esta ocasión se utiliza j,k, barra espacio )
-con función de interruptor, al apretarla una vez inicia una funcion y al volver a apretarlas estas desaparecen, funcionando
-en base a una condición especifica que es que las otras funciones esten desactivadas, por lo que no se podrán ver las tres funcionando 
-simultáneamente.
+El programa consiste en que al accionar cierta tecla(en esta ocasión se utiliza j, k, barra espacio )
+con función de interruptor, al apretarla una vez inicia una función y al volver a apretarlas estas desaparecen, funcionando en base a una condición especifica que es que las otras funciones esten desactivadas, por lo que no se podrán ver las tres funcionando simultáneamente.
 
 La función "rectangulo"(ejecutada con la tecla "espacio") crea una variedad de rectángulos cuyo centro es la posición del mouse sobre el canvas. Estos 
 además rotan alrededor del eje central y cada rectángulo  tiene una velocidad distinta.
