@@ -14,7 +14,7 @@ Al presionar "a" se puede volver a la primera etapa.
 
 En la primera propuesta se mantuvieron los colores elegidos y la disposición de los círculos. Cambio la forma en que aparecen y giran los anillos, ya que en la propuesta decia que los anillos iban apareciendo solos y al hacer click giraban. En este caso es al revés, los anillos giran solos y con una tecla aparecen más anillos y con otra van desapareciendo. Tambien hay un cambio en la saturación del color, ya que en cada línea compuesta de círculos, desde el centro hacia afuera, parten de muy saturado hasta desaparecer. 
 
-En la segunda propuesta no cambian las descipciones, pero si la forma en que se ve. Al ir agrandandose los cuadrados cambian de color, pero crecen en torno al mouse. La forma en como se juntan también se ve distinta, ya que se agrandan en torno al mouse. Los colores son los mismos que en la propuesta. 
+En la segunda propuesta no cambian las descripciones, pero sí la forma en que se ve. Al ir agrandándose los cuadrados cambian de color, pero crecen en torno al mouse. La forma en como se juntan también se ve distinta, ya que se agrandan en torno al mouse. Los colores son los mismos que en la propuesta. 
 
 En la tercera propuesta los movimientos son los mismos, el aro y los anillos van girando en sentido de las agujas del reloj y al presionar una tecla, el aro y los anillos cambian de sentido. En los colores, se utilizó el azul de fondo y rosado y morado para los anillos. los círculos van en degrade desde el rosado al morado. 
 
