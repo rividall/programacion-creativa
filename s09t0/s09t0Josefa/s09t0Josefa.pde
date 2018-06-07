@@ -6,7 +6,7 @@ ArrayList <Figura> nFiguras = new ArrayList <Figura>(); // ArrayList para la cla
 
 Figura f; // Vinculo la Figura con la letra f
 
-int n; //variable de selleccion 
+int n; //variable de selleccion
 
 void setup() {
 
@@ -29,7 +29,7 @@ void draw() {
 }
 
 void mousePressed() {
-  //condición para agregar figuras 
+  //condición para agregar figuras
   if (mousePressed) {
     Figura f = new Figura(random(width), random(height), random(width), random(height), random(20, 80), random(30, 100));
     nFiguras.add(f);
@@ -37,11 +37,11 @@ void mousePressed() {
 }
 
 void keyPressed () {
-  //condición para que se vean los rec 
+  //condición para que se vean los rec
   if (key == '1') {
     n = 1;
   }
-  //condición para que se vean los circulos 
+  //condición para que se vean los circulos
   else if (key == '2') {
     n = 0;
   }
