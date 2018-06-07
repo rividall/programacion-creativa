@@ -84,6 +84,11 @@ void draw(){
 
   p = p + 10;              // Variable para hacer que el fondo cambie de color constantemente
   background(255);         // Fondo permamente
+
+  /*Es la única función que se llama y la única creada,
+    el resto del programa está escrito sin el diseño orientado a objeto OOP
+    contenido crucial para esta parte del semestre.
+  */
   a.lerpcc();              //Gradiente usando lerp: Cargar una funcion desde la clase
 
 /////////////////////////////////////////////////// ELLIPSE CENTRAL ////////////////////////////////////////////////////
