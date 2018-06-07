@@ -1,3 +1,4 @@
+// autor y titulo
 /*
 //INSTRUCCIONES//
 
@@ -83,6 +84,11 @@ void draw(){
 
   p = p + 10;              // Variable para hacer que el fondo cambie de color constantemente
   background(255);         // Fondo permamente
+
+  /*Es la única función que se llama y la única creada,
+    el resto del programa está escrito sin el diseño orientado a objeto OOP
+    contenido crucial para esta parte del semestre.
+  */
   a.lerpcc();              //Gradiente usando lerp: Cargar una funcion desde la clase
 
 /////////////////////////////////////////////////// ELLIPSE CENTRAL ////////////////////////////////////////////////////
@@ -96,7 +102,9 @@ void draw(){
    strokeWeight(30);
    noStroke();                                      // Sin bordes
    translate(width/2, height/2);                    // punto (0,0)/ ORIGEN en el centro del sketch
-   for(int i = 0; i < 360; i+=1.5){                 // For que define: angulo máximo de rotación, cantidad de figuras y su separación
+
+   // no se puede incrementar en float un loop de int
+   for(int i = 0; i < 360; i+= 1.5){                 // For que define: angulo máximo de rotación, cantidad de figuras y su separación
        float x = sin(radians(i))*150;               // variable de rotacion
        float y = cos(radians(i))*150;               // variable de rotacion
        pushMatrix();                                // Abriendo propiedades independientes
@@ -145,6 +153,24 @@ void draw(){
   ellipse(0,0,600,600);
 
 }
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/*
+
+Todas las interacciones con el teclado se hacen por medio del método keyPressed
+que está fuera el método draw, de esta manera se separa el flujo del programa
+por quién lo modifica (keys).
+
+Al tener todo dentro de un solo método se genera saturación de código, repetición
+y lo más importante, creación en un lugar que está estructurado para la modificación
+
+*/
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
 
 //////////////////////////////////////////// INTERACCIONES TECLA "N"  ////////////////////////////////////////////////////
 

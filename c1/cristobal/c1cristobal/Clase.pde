@@ -30,43 +30,56 @@ class Figura {
 
     translate (mouseX, mouseY);//centro posición del mouse
     pushMatrix();
-    for (int i =0; i<5; i++) {
-      rotate(r1);
+    rotate(r1);
+    for (int i = 0; i < 5; i++) {
       noFill();
       stroke(0, 255, 0);//Contorno verde
-      rect(x, y, t+i*70, t+i*70);
+      rect(x, y, t+i * 70, t+i * 70);
       if (t == 30) {
-        r1+= 0.1;
+        r1 += 0.001; // no hay control
       }
+      // else para r2
     }
     popMatrix();
-    for (int i = 0; i<5; i++) {
+
+    pushMatrix();
+    for (int i = 0; i < 5; i++) {
       strokeWeight(2);
       rotate(r2);
-      rect(x, y, t2+i*60, t2+i*60);
+      rect(x, y, t2+i * 60, t2+i * 60);
       if (t2 == 70) {
-        r2+=0.123;
+        r2 += 0.00123; // no hay control
       }
+      // else para r2
     }
+    popMatrix();
   }
-  void circulo() {
 
-    if (mouseX >width/2 && mouseY <height/2) { //cuarta parte de arriba a la derecha
-      posx = random(-50, 40);
+  // descripción
+  void circulo() {
+      // descripción
+    if (mouseX > width/2 && mouseY < height/2) { //cuarta parte de arriba a la derecha
+      posx = random(-50, 40); // no hay control
       a = 255;
       s = 0;
       d = 0;
-    } else if (mouseX >width/2 && mouseY >height/2) {//cuarta parte de abajo a la derecha
+    }
+    // descripción
+    else if (mouseX > width/2 && mouseY > height/2) {//cuarta parte de abajo a la derecha
       posx = 30;
-      a =0;
+      a = 0;
       s = 0;
       d = 255;
-    } else if (mouseX < width/2 && mouseY > height/2) {//cuarta parte de abajo a la izquierda
-      posx = random(-100, 0);
+    }
+    // descripción
+    else if (mouseX < width/2 && mouseY > height/2) {//cuarta parte de abajo a la izquierda
+      posx = random(-100, 0); // no hay control
       a = 199;
-      s= 21;
+      s = 21;
       d = 133;
-    } else if (mouseX < width/2 && mouseY< height/2) {//cuarta parte de arriba a la izquierda
+    }
+    // descripción
+    else if (mouseX < width/2 && mouseY < height/2) {//cuarta parte de arriba a la izquierda
       posx = 100;
       a = 17;
       s = 201;
@@ -76,8 +89,9 @@ class Figura {
     translate(width/2, height/2);
     rotate(radians(r3));
     r3++;
-    for (int o= 0; o<qty; o++) {
-      for (int i=0; i< 8; i++) {
+    // descripción
+    for (int o = 0; o < qty; o++) {
+      for (int i=0; i < 8; i++) {
         noStroke();
         fill(a, s, d);
         ellipse(posx + i * 20, 0, 10, 10);//una elipse alineada con otra.
@@ -86,27 +100,33 @@ class Figura {
     }
     popMatrix();
   }
+
+  // descripción
   void pelotillas() {
     translate(width/2, height/2);
-    for (int p=0; p<2; p++) {
-      for (int i= 0; i < 8; i++) {
+
+    // descripción
+    for (int p = 0; p < 2; p++) {
+      for (int i = 0; i < 8; i++) {
         fill(255);//blanco
         noStroke();
         rotate(radians(r));
-        ellipse(x1 +p* 125, y1, 20, 20);
-        r+= 0.08;
+        ellipse(x1 + p*125, y1, 20, 20);
+        r += 0.08;
       }
     }
-    rotate(radians(r4));//rotación figuras rojas
-    r4++;
-    pushMatrix();
 
+    pushMatrix();
+    // rotate(radians(r4));//rotación figuras rojas
+    // r4++;
+
+    // descripción
+    // PORQUE HAY 9 LOOP MOSTRANDO UNA SOLA FIGURA?
     for (int i = 0; i < 9; i++) {
       fill(255, 0, 0); //rojo
       noStroke();
-      ellipse(x1*-2, y1*-2, mouseX/4, mouseY/4);
+      ellipse(x1 * -2, y1 * -2, mouseX/4, mouseY/4);
     }
-
     popMatrix();
   }
 }
