@@ -14,7 +14,8 @@ float value = 10;
 
 void setup() {
   size(400, 400);
-  f = new Figura();//(i)
+  f = new Figura();
+  // si no se usa la lista, el tercer paso de una variable no se cumple
   lista.add(f);
 }
 
@@ -22,10 +23,11 @@ void draw() {
   if (var1 == 1) {//Cuadrados
     background(255);
     noStroke();
+    // este frameRate es para todo el programa, no se puede cambiar y se usa
+    // en el setup
     frameRate(45); // 45 frames por segundo
     f.filacuad();
     f.sube();
-    frameRate(45); // 45 frames por segundo
     f.lineacuad();
     f.baja();
 
