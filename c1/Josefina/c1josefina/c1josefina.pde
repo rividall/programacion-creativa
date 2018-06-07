@@ -34,6 +34,8 @@ void draw() {
     //Separacion del tamaño del sketch para relacionarlo con la posicion del mouse para cambiar los colores de los objetos
     if ( mouseX < width / 2 && mouseY < height / 2) {
       fill(f.colores[0]);
+      // este llamado a la función es redundante si siempre hace lo mismo
+      // en todas las condicionales
       f.sube();
     }
 
@@ -57,16 +59,17 @@ void draw() {
     frameRate(15);
     background(255);
     for (Figura f : lista)
-      f.flor(0);
-    f.flor(400);
+      f.flor(0); // no tiene efecto el parámetro
+      f.flor(400); // no tiene efecto el parámetro
   }
 
   if (var3 == 1) {//opacidad
+      // qué frameRate usa este si se afecta por el anterior?
     background(0);
     fill(0);
     noStroke();
     ellipse(200, 200, 5, 5);
-    for (Figura f : lista) {
+    for (Figura f : lista) { // como es un solo objeto no es necesario una lista
       f.cir();
       f.op();
       f.grilla();
