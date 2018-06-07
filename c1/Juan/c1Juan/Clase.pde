@@ -48,17 +48,3 @@ void lerpcc(){
   }
 
 }
-
-
-/*
-void bubls(){
-  //fill(50,80,100);
-  translate(width/2, height/2);
-  rotate(radians(p));
-  rect(-26, -26, 52, 52);
-
-
-}
-
-}
-*/

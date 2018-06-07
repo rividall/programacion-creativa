@@ -1,7 +1,7 @@
 class Figura {
 
   //Variables de posiciones, tamaño, opacidad, direccion y velocidad
-  float posX, posY, posX2, posY2, tam, op; 
+  float posX, posY, posX2, posY2, tam, op;
   float dirX = random(-1, 1), dirY = random(-1, 1), vel = (random(3, 5));
   float dirX2 = random(-1, 1), dirY2 = random(-1, 1);
 
@@ -17,7 +17,7 @@ class Figura {
 
   void dibujo(int eleccion) {
 
-    //condición para vincular el cambio de vista de las figuras 
+    //condición para vincular el cambio de vista de las figuras
     if (eleccion == 0) {
       ellipses();
     } else if (eleccion == 1) {
@@ -46,7 +46,7 @@ class Figura {
     rect(posX2, posY2, tam, tam);
   }
 
-  void bordes() {  
+  void bordes() {
 
     // condición para que las ellipses reboten
     if (posX + tam/2 > width || posX - tam/2 < 0 || posY + tam/2 > height || posY - tam/2 < 0) {
@@ -62,21 +62,22 @@ class Figura {
   }
 
   void posiciones() {
-    // Vinculo la posición con velocidades y direcciones para que rebote 
+    // Vinculo la posición con velocidades y direcciones para que rebote
     posX += vel * dirX;
     posY += vel * dirY;
     posX2 += vel * dirX;
     posY2 += vel * dirY;
   }
 
+  // los modificadores externos deben entrar como paramentros
   void desplazar() {
-    // Void para mover las figuras con las flechas 
+    // Void para mover las figuras con las flechas
     if (key == CODED) {
       // Tecla de arriba sube la figura
       if (keyCode == UP) {
         posY --;
         posY2 --;
-        // Tecla de abajo bajan las figura 
+        // Tecla de abajo bajan las figura
       } else if (keyCode == DOWN) {
         posY ++;
         posY2 ++;
@@ -84,7 +85,7 @@ class Figura {
       } else if (keyCode == LEFT) {
         posX --;
         posX2 --;
-        // Tecla de la derecha se mueve a la derecha 
+        // Tecla de la derecha se mueve a la derecha
       } else if (keyCode == RIGHT) {
         posX ++;
         posX2 ++;

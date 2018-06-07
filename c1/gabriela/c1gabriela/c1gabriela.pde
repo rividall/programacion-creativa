@@ -34,11 +34,11 @@ void draw() {
 }
 
 void keyPressed() {
-  if (key =='0') { // Cambio sentido anillos.
-    n= 0;
+  if (key == '0') { // Cambio sentido anillos.
+    n = 0;
   }
   if (key == '1') { // Cambio sentido anillos.
-    n= 1;
+    n = 1;
   }
   if (key == 'v') { // Resto anillos.
     val--;
@@ -49,16 +49,16 @@ void keyPressed() {
   if (key == 'a') { // Se abre a.cir().
     var1 = 1;
     var2 = 0;
-    var3= 0;
+    var3 = 0;
   }
   if (key == 's') {  // Se abre c.anillos().
     var1 = 0;
     var2 = 1;
-    var3= 0;
+    var3 = 0;
   }
   if (key == 'd') { // Se abre c.cuadrados();
     var1 = 0;
     var2 = 0;
-    var3= 1;
+    var3 = 1;
   }
 }

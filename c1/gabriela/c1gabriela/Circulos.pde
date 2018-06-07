@@ -68,6 +68,7 @@ class Circulos {
     r++; // Giran hacia la derecha.
     cantt= 40; // cantidad de líneas y de grados.
     for (int k = 0; k < cantt; k++) {
+        // val debe ser local a la función y el valor pasado por parametros
       for (int l = 0; l < val; l++) {
         noStroke();
         f= paleta [l % 4]; // 4 = Cantidad de colores que iran en l.
