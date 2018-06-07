@@ -1,3 +1,5 @@
+// descripción general, autor, título
+
 ArrayList<Objeto> objeto = new ArrayList<Objeto>();
 Objeto o;
 
@@ -18,7 +20,7 @@ void setup () {
   }
 }
 
-void draw () { 
+void draw () {
   if (var1 == 1) {
     o.lines(var1);
   }
@@ -41,7 +43,7 @@ void keyPressed () {
     var2 = 1;
     var3 = 0;
   }
-  
+
   if (key == 'a') { // Cambia de dirección a la izquierda al presionar la tecla 'a'
     m = -1;
   } else if (key == 'd') { // Cambia de dirección a la derecha al presionar la tecla 'd'

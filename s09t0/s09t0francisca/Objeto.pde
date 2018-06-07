@@ -8,7 +8,7 @@ class Objeto {
 
   Objeto(int o) {
     a = 0.005;
-    b=185; 
+    b=185;
     m=1.5;
     v0=0;
     v1+= a * m;
@@ -96,5 +96,5 @@ class Objeto {
     fill(208, 194, 150);
     ellipse(0, 0, 10, 10);
   }
-  
+
 }
