@@ -28,8 +28,6 @@ class Particula {
         noStroke();
         ellipse(x, y, t, t);
       } else if (n == 2) {//crea un rectángulo
-        //  rect(x,y,t,t);
-        //t = 30;
         rect(x, y, t, t);
       }
     //}

@@ -1,3 +1,5 @@
+// descripción general, autor, título
+
 ArrayList<Particula> lista = new ArrayList<Particula>();
 Particula p;
 int n, m;
