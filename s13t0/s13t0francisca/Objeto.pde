@@ -9,7 +9,7 @@ class Objeto {
   Objeto() {
 
     this.randomColor = int(random(3)); // hará un random entre los 3 colores que hay
-    colores = new color[3]; 
+    colores = new color[3];
     colores[0] = color(255, 0, 100);
     colores[1] = color(250, 255, 0);
     colores[2] = color(0, 100, 255);
@@ -33,17 +33,19 @@ class Objeto {
         fill (colores[0]);
         ellipse(x, y, tam, tam);
       }
-    } else if (j == 2) {
+    }
+
+    else if (j == 2) {
+        color cl = 0;
       if (tam >= 20 && tam <= 49) {
-        noStroke();
-        fill (colores[0]);
-        rect(x, y, tam, tam);
+        cl = colores[0];
       }
       if (tam >= 50 && tam <= 80) {
-        noStroke();
-        fill (colores[2]);
-        rect(x, y, tam, tam);
+        cl = colores[2];
       }
+      noStroke();
+      fill(cl);
+      rect(x, y, tam, tam);
     }
   }
 
@@ -79,7 +81,7 @@ class Objeto {
         y = height;
       }
     } else if (tam<=49) { // Rebote
-      if (x>width - tam/2) { 
+      if (x>width - tam/2) {
         velX = velX * -1;
       }
       if (x<tam/2-1) {
