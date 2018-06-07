@@ -1,9 +1,11 @@
 //Universidad del Desarrollo - Programación creativa - Josefina Hidalgo
-/*el sketch consta de tres figuras, un círculo de
- elipses, una flor de rectangulos y una grilla de cuadrados las cuales pueden
- adoptar diferentes movimientos según las teclas que se presionan, tecla 'd' se mueve
- hacia la derecha con retorno hacia el centro, tecla 'e' hacia la izq con retorno hacia el centro y tecla 'f' hacia
- abajo pasando de largo */
+/*
+el sketch consta de tres figuras, un círculo de elipses, una flor de rectangulos
+y una grilla de cuadrados las cuales pueden adoptar diferentes movimientos según
+las teclas que se presionan, tecla 'd' se mueve hacia la derecha con retorno
+hacia el centro, tecla 'e' hacia la izq con retorno hacia el centro y tecla 'f'
+hacia abajo pasando de largo
+ */
 Objeto o;
 boolean a, b, c;
 boolean j, k, l, m;
