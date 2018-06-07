@@ -13,10 +13,8 @@ float value = 10;
 
 void setup() {
   size(400, 400);
-  //for (int i = 0; i < 10; i ++) {
   f = new Figura();//(i)
   lista.add(f);
-  //}
 }
 
 void draw() {
