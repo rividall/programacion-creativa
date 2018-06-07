@@ -1,4 +1,6 @@
-Al iniciar el sketch se presentarán tres objetos conformados por tres anillos que se estarán moviendo de un lado al otro cruzandose el centro, además estos objetos se estarán dilatando y contrayendo durante su recorrido. 
+# Titulo
+
+Al iniciar el sketch se presentarán tres objetos conformados por tres anillos que se estarán moviendo de un lado al otro cruzándose en el centro, además estos objetos se estarán dilatando y contrayendo durante su recorrido. 
 
 ![Dibujo 1-3](c1Josefa\Dibujo 1-3.png)
 
@@ -6,11 +8,11 @@ Para continuar y entender lo que está sucediendo con el primer sketch uno debe 
 
 ![Dibujo 1 -4](c1Josefa\Dibujo 1 -4.png)
 
-La otra composición se puede ver apretando el número 3, donde aparecerá una figura con 12 brazos que contiene tres rect de distintos tamaños que giraran entorno aun centro con velocidades diferentes, completando el ciclo en 24 segundos. Además si uno presiona el mouse y lo desplaza podrá modificar los tamaños de los rectángulos en un cierto rango. 
+La otra composición se puede ver apretando el número 3, donde aparecerá una figura con 12 brazos que contiene tres rectángulos de distintos tamaños que girarán entorno a un centro con velocidades diferentes, completando el ciclo en 24 segundos. Además si uno presiona el mouse y lo desplaza podrá modificar los tamaños de los rectángulos en un cierto rango. 
 
 ![Dibujo 2-1](c1Josefa\Dibujo 2-1.png)
 
-Finalmente, si seleccionamos la tecla 4 podremos ver e interactuar con más detalle lo que está sucediendo en la composición, donde se imprime la información del ancho de la figura, el alto, y el anulo de rotación. Además, la figura ya no se moverá por sí sola, sí uno aprieta el botón izquierdo del mouse se moverá en su forma original, y sí uno aprieta el botón derecho del mouse se moverá pero distorsionada con los rangos del mouseX y el mouseY.  
+Finalmente, si seleccionamos la tecla 4 podremos ver e interactuar con más detalle lo que está sucediendo en la composición, donde se imprime la información del ancho de la figura, el alto, y el ángulo de rotación. Además, la figura ya no se moverá por sí sola, sí uno aprieta el botón izquierdo del mouse se moverá en su forma original, y sí uno aprieta el botón derecho del mouse se moverá pero distorsionada con los rangos del mouseX y el mouseY.  
 
 ![Dibujo3](c1Josefa\Dibujo3.png)
 

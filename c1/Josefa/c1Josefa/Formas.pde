@@ -6,7 +6,7 @@ class Formas {
   PImage img1; // Variable para colocar mi imagen del dibujo 1
   PImage img3; // Variable para colocar mi imagen del dibujo 3
 
-  float r; // Radio para el movimiento del Dibujo3
+  float r; // Radio para el movimiento del dibujo3
   float tam = 25; //Tamaño de los anillos del Dibujo 1
   float h;
 
@@ -27,7 +27,7 @@ class Formas {
   }
 
 
-  void Dibujo1() {
+  void dibujo1() {
 
     strokeWeight(5); // Grosor de línea 5px
 
@@ -57,7 +57,7 @@ class Formas {
   ////////////////////////////////////////////
 
   // Función para rotar los 3 anillos
-  void Rotar1(float ap, float f) { // F es un contador
+  void rotar1(float ap, float f) { // F es un contador
     a += ap; // Se suma para ver las 3 ellipses
     h = map(sin(f), -1, 1, -100, 100);
 
@@ -67,7 +67,7 @@ class Formas {
 
   ////////////////////////////////////////////
 
-  void Dibujo1In() {
+  void dibujo1In() {
     noStroke(); // No líneas en el texto
     fill(255); // Color del texto blanco
     textSize(20);// Tamaño del texto 25px
@@ -90,7 +90,7 @@ class Formas {
 
   ///////////////////////////////////////////
 
-  void Dibujo3() {
+  void dibujo3() {
 
     float an = 2; // Variable para el ancho de los rectángulos
     float al = 20; // Variable para el alto de los rectángulos
@@ -181,7 +181,10 @@ class Formas {
 
   //////////////////////////////////////////////////////////////
 
-  void Dibujo3In() {
+  void dibujo3In() {
+
+
+    // variabes Globales en entornos locales no se debe hacer
 
     float an = 2; // Variable para el ancho de los rectángulos
     float al = 20; // Variable para el alto de los rectángulos
@@ -192,7 +195,7 @@ class Formas {
     boolean cambioColor = false; // Booleana para cambiar los colores entre un array y el otro
 
     int index; // Variable para recorrer entre un array y el otro
-
+    // variabes Globales en entornos locales no se debe hacer
     background(12, 2, 69); // Color de fondo azul oscuro
     noStroke(); // No hay bordes
 
@@ -232,25 +235,25 @@ class Formas {
 
     rectMode(CENTER); // Cambio el centro de los rect para que estén alineados
 
-    for (int i=1; i<12; i++) { // Forloop para la cantidad de brazos
-      for (int j=1; j<4; j++) { // Forloop para la cantidad de anillos
+    for (int i = 1; i < 12; i++) { // Forloop para la cantidad de brazos
+      for (int j = 1; j < 4; j++) { // Forloop para la cantidad de anillos
 
         pushMatrix();
 
         if (cambioColor) { // Si mi boolean es verdadera
-          if (j%3==0) { // Anilo exterior
+          if (j % 3 == 0) { // Anilo exterior
             fill(colores1[0]); // Color 0 del array colores 1 (morado claro)
-          } else if (j%2==0) { // Anillo del centro
+          } else if (j % 2 == 0) { // Anillo del centro
             fill(colores1[1]); // Color 1 del array de colores 1 (morado)
-          } else if (j%1==0) { // Anillo interno
+          } else if (j % 1 == 0) { // Anillo interno
             fill(colores1[2]); // Color 2 del array colores 1 (morado oscuro)
           }
         } else {
-          if (j%3==0) { // Anillo externo
+          if (j % 3 == 0) { // Anillo externo
             fill(colores2[0]); // Color 0 del array colores 2 (morado oscuro)
-          } else if (j%2==0) { // Anillo del centro
+          } else if (j % 2 == 0) { // Anillo del centro
             fill(colores2[1]); // Color 1 del array colores 1 (morado)
-          } else if (j%1==0) { // Anillo interno
+          } else if (j % 1 == 0) { // Anillo interno
             fill(colores2[2]); // Color 2 del array colores 2 (morado claro)
           }
         }
@@ -287,7 +290,8 @@ class Formas {
     }
   }
 
-  void Ocho() {
+  // si el método no se usa, no va en el programa.
+  void ocho() {
     noStroke(); // No bordes
     background(255); // Color de fondo blanco
 
@@ -347,17 +351,17 @@ class Formas {
   void cambios() {
 
     if (key == '2') {
-      Dibujo1In();
+      dibujo1In();
     }
     // Condiciones de botones para pasar entre los dibujos
     if (key == '3') { // Con el número 5
-      Dibujo3(); // Se reproduce el dibujo 3
+      dibujo3(); // Se reproduce el dibujo 3
     }
     if (key == '4') { // Con el numero 6
-      Dibujo3In(); // Se reproduce el dibujo 3 con información
+      dibujo3In(); // Se reproduce el dibujo 3 con información
     }
     if (key == '5') { // Con el numero 5
-      Ocho(); // Se reproduce el dibujo 2
+      ocho(); // Se reproduce el dibujo 2
     }
   }
 }

@@ -41,7 +41,7 @@ Formas f; // Declaro mi variable f con la clase Formas
 void setup() {
   size(500, 600); // Tamaño del canvas
 
-  for (int i = 0; i<4; i++) { // Creo un forloop para tener 3 anillos iguales
+  for (int i = 0; i < 4; i++) { // Creo un forloop para tener 3 anillos iguales
     float r = 50; // Defino el radio de mis anillos
     float a = map (i, 0, 3, 0, TWO_PI); // i que va de 0 a 3 según el forloop se desplace de 0° a 360°
 
@@ -61,11 +61,14 @@ void draw() {
   pushMatrix();
   translate(width/2, 250); // Desplazo la figura
   for (Formas p : nFormas) {
-    p.Rotar1(0, frameCount*0.01); // Aplico rotar
-    p.Dibujo1(); // Aplico el dibujo 1
+    p.rotar1(0, frameCount*0.01); // Aplico rotar
+    p.dibujo1(); // Aplico el dibujo 1
   }
   popMatrix();
 
+  // Todas las funciones que se llaman internamente desde cambios()
+  // afectan a un solo objeto, esos cambios deben ser desde fuera de la clase
+  // con un método para cada cambio.
   f.cambios(); // Aplico la función para ir cambiando los dibujos con el teclado
 
 }
