@@ -1,3 +1,4 @@
+// Descripción general y titulo
 ArrayList<Figura> lista = new ArrayList<Figura>(); //Agregar la clase como lista
 Figura f;
 //Variables para separar sketchs
