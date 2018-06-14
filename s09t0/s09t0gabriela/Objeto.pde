@@ -26,6 +26,7 @@ class Objeto {
     }
   }
 
+// descripción del método
   void lineas() {
     translate(w, v); // Se traslada el punto de origen al centro del canvas.
     int cant = 20; // Variable de cantidad de objetos.
@@ -44,6 +45,7 @@ class Objeto {
     }
   }
 
+  // descripción del método
   void cir() {
     translate(w, v);
     strokeWeight(1);
@@ -55,6 +57,7 @@ class Objeto {
     }
   }
 
+  // descripción del método
   void lineaDos() {
     translate(w, v);
     strokeWeight(3);
@@ -64,6 +67,7 @@ class Objeto {
     }
   }
 
+// falta metodo de borde
   void mov(boolean t, boolean o, boolean r, boolean q) {
     if (t) {
       v++;
