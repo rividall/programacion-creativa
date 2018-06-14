@@ -18,11 +18,11 @@ class Figura {
 
   Figura() {
     //Variables sketch 1
-    colores = new color [4]; //lista de colores
-    colores [0] = color (66, 110, 173); //azul pastel
-    colores [1] = color (238, 137, 180); //rosado pastel
-    colores [2] = color (248, 240, 164); //amarillo pastel
-    colores [3] = color (151, 227, 218); //verde agua
+    colores = new color[4]; //lista de colores
+    colores [0] = color(66, 110, 173); //azul pastel
+    colores [1] = color(238, 137, 180); //rosado pastel
+    colores [2] = color(248, 240, 164); //amarillo pastel
+    colores [3] = color(151, 227, 218); //verde agua
     x = 24;
     y = height;
     v = height;
@@ -31,7 +31,7 @@ class Figura {
     op = st;
   }
 
-  //Voids sketch cuadrados
+  //FUNCIONES O MÉTODOS sketch cuadrados
   void sube() { //accion de subir
     y = y - 1;
     if (y < 0) {
@@ -50,7 +50,7 @@ class Figura {
 
     for (int i = 0; i < 10; i ++) {
       for (int j = 0; j < 10; j ++) {//9 cuadrados por corrida
-        rect(i * 48.2, v, 15, 15);// 48.2 es la separacion entre los 9 cuadrados
+        rect(i * 48.2, v, 15, 15);// 48.2 es la separación entre los 9 cuadrados
 
         if (v > 200) {
           rect(i * 48.2, v, 15, 200);
@@ -69,8 +69,10 @@ class Figura {
     }
   }
 
-  //Voids sketch flores
+  //FUNCIONES O MÉTODOS sketch flores
+  // el parámetro u no se usa
   void flor(float u) {
+      // n entra desde keyPressed y debe ser como parámetro local
     if (n == 0) { //Estado de comportamiento 0
       p = -1;    //Valor de p provoca giro en -1, es decir anti horario
     } else if (n == 1) { //Estado de comportamiento 1
@@ -92,7 +94,7 @@ class Figura {
     }
     popMatrix();
   }
-  //Voids sketch opacidad
+  //FUNCIONES O MÉTODOS sketch opacidad
   void cir() {
     noStroke();
     op += chng;
@@ -106,7 +108,7 @@ class Figura {
     fill(255, dop);
   }
 
-  void grilla() {//grilla de circulos
+  void grilla() {//grilla de círculos
     pushMatrix();
     translate (200, 200);
     rotate(radians(r));
