@@ -7,7 +7,7 @@ class Bruss {
   int minHum, int maxSea, int minSea, int maxWind, int maxGust,
 	int preci, int eve) {
 		this.dia = dia;
-		this.mes = map(maxima, 0, 30, 0, 250);
+		// this.mes = map(maxima, 0, 30, 0, 250);
 		this.tempMax = map(minima, -9, 10, 0, 255);
 		this.tempMin = map(minima, -9, 10, 0, 255);
 		this.maxHum = map(minima, -9, 10, 0, 255);

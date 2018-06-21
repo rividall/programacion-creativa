@@ -12,7 +12,8 @@ class Bubble {
   int i;
   boolean over = false;
   // Create the Bubble
-  Bubble(float tempX, float tempY,  String s, float tempH, int i, float graViento, float tempD, float velP, float velM) {
+  Bubble(float tempX, float tempY,  String s, float tempH, int i, float graViento, float tempD) {
+      // Bubble(dia, y, "h", powViento, i, e, d);
 // VER EN CLASES EL TEMA DEL COLOR
      colores = new color [7];
        colores[0] = color(150, 74, 129); // Rosado.
@@ -33,14 +34,14 @@ class Bubble {
     this.i = i;
   }
   // Checking if mouse is over the bubble
-  void rollover(float px, float py) {
-    float d = dist(px, py, x, y);
-    if (d < velocidadMIN/2) {
-      over = true;
-    } else {
-      over = false;
-    }
-  }
+  // void rollover(float px, float py) {
+  //   float d = dist(px, py, x, y);
+  //   if (d < velocidadMIN/2) {
+  //     over = true;
+  //   } else {
+  //     over = false;
+  //   }
+  // }
   // Display the Bubble
   void circGeneral() {
 
