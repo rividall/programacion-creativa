@@ -13,9 +13,6 @@ Objeto u;
 Objeto t;
 boolean a, b, c, d, f, g, h, i, j; // Se declaran variables booleanas.
 
-
-
-
 void setup() {
   size(500, 500); // Tamaño canvas.
   for (int i = 0; i < 5; i++) { // Número de objetos (5 por Objeto, 20 figuras de cada forma, 3 formas, 60 figuras en total.
@@ -32,7 +29,8 @@ void setup() {
 }
 
 void draw() {
-  background(12, 27, 72); // Color de fondo.
+  background(255); // Color de fondo.
+
   for (Objeto o : lista) {  // Subir todos los objetos de la lista.
     o.forma(a, b, c); // Se llama a los métodos de formas.
     o.mov(d, f, g, h, i); // Se llaman a los métodos de movimiento.

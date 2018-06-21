@@ -29,5 +29,5 @@ void keyPressed() {
     if (keyCode == DOWN) { m = 2; }//desplazamiento abajo
     if (keyCode == UP) { m = 3;}//desplazamiento arriba
     if (keyCode == LEFT) { m = 4;}//desplazamiento izquierda
-  }  
+  }
 }
