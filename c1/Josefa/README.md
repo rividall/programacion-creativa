@@ -2,7 +2,7 @@
 
 Al iniciar el sketch se presentarán tres objetos conformados por tres anillos que se estarán moviendo de un lado al otro cruzándose en el centro, además estos objetos se estarán dilatando y contrayendo durante su recorrido. 
 
-![Dibujo 1-3](c1Josefa\Dibujo 1-3.png)
+![Dibujo 1-3](Dibujo 1-3.png)
 
 Para continuar y entender lo que está sucediendo con el primer sketch uno debe apretar el número 2 para poder ver los detalles del radio, recorrido, posición en X y la posición en Y. Además aparecerá una ellipse blanca sobre uno de los anillos para entender cómo se están moviendo las figuras. 
 
