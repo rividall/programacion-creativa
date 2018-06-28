@@ -1,44 +1,18 @@
 
-
-
-
-ArrayList < Objeto > lista = new ArrayList < Objeto > ();
-Objeto o;
-
-int inicio, fin;
-
-void setup() {
-	size(500, 500);
-	int total = 500;
-	for (int i = 0; i < total; i++) {
-		float pos = map(i, 0, total, 0, height);
-		o = new Objeto(10 + i, pos, 2);
-		lista.add(o);
-	}
-    fin = lista.size();
+void setup(){
+	size(800, 800);
 }
 
 void draw() {
-	background(255);
-
-    for (int i = inicio; i < fin; i ++) {
-        // if (i % 5 == 0) {
-            Objeto cualquiera = lista.get(i);
-            cualquiera.forma();
-            cualquiera.mov();
-            cualquiera.borde();
-        // }
-    }
-
-      // Objeto cualquiera = lista.get();
-      // cualquiera.forma();
-      // cualquiera.mov();
-      // cualquiera.borde();
-
-
-}
-
-void keyPressed() {
-    if (key == '+') {inicio ++;}
-    if (key == '-') {fin --;}
+  background(204);
+  int s = second();  // Values from 0 - 59
+  int m = minute();  // Values from 0 - 59
+  int h = hour();    // Values from 0 - 23
+  strokeWeight(2);
+  stroke(255, 0, 0);
+  line(s, 0, s, height);
+  stroke(0, 255, 0);
+  line(m, 0, m, height);
+  stroke(0, 0, 255);
+  line(h, 0, h, height);
 }
