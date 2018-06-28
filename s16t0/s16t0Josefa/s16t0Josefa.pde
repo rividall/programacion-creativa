@@ -17,21 +17,22 @@ void setup() {
     int maxTemp = row.getInt("maxTemp");
     int minTemp = row.getInt("minTemp");
 
-    objetos[i] = new Clase(mes, dia, maxTemp, minTemp);
+    objetos[i] = new Clase(mes, dia, maxTemp, minTemp, i);
   }
 }
 
 void draw() {
-  background(255);
-  println(index);
 
-  for (int i = 0; i < objetos.length; i ++) {
-    objetos[index].funcion();
-  }
+  background(255);
+  // println(index);
+  objetos[index].funcion();
+  // for (int i = 0; i < objetos.length; i ++) {
+    // objetos[i].funcion();
+  // }
 }
 
 void Tabla() {
-  
+
 }
 
 void mousePressed() {

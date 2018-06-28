@@ -46,7 +46,7 @@ class Clase {
 
   void velViento() {
     float x, y;
-    float vel = velViento;    
+    float vel = velViento;
     float r = 50;
 
     translate(width/2, height/2);
