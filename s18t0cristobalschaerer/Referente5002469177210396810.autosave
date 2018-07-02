@@ -1,0 +1,25 @@
+class Referente{
+float x,y,z;
+int t;
+int medioancho, medioalto;
+
+Referente(){
+  x = 0;
+  y = 0;
+  z = 0;
+  t = 10;
+  medioancho = width/2;
+  medioalto = height/2;
+//  r = map(mouseX,0,width,0,360);
+}
+
+void ref1(float r){
+  translate(medioancho,medioalto);
+for(int i =0; i<r; i++){
+  stroke(0,255,0);
+  rotate(radians(r));
+  triangle(25,-25,25,25,50,50);
+ }
+}
+
+}
