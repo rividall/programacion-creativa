@@ -1,3 +1,8 @@
+/*
+Completamente mal escrito, no se usan bases de datos
+No se escribe correctamente.
+*/
+
 void setup() {
   size(1280, 700);
   background (0);
@@ -27,7 +32,7 @@ void draw () {
   noStroke ();
   fill (255, 50, 0);
   triangle (300, height/2, 400, height/2, 350, 50);
-  
+
   noStroke ();
   fill (255, 50, 0);
   triangle (350, height/2, 450, height/2, 400, 50);
