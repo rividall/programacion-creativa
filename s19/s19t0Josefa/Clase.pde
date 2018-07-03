@@ -66,7 +66,7 @@ class Clase {
 
                 translate(width / 2, height / 2);
                 rotate(radians(i * 365 / 360));
-
+                // no se debería mover
                 ellipse(random(50), 0, 2, 2);
                 ellipse(random(50, 200), 0, 2, 2);
                 popMatrix();
