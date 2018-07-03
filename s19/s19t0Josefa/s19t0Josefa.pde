@@ -19,6 +19,7 @@ void setup() {
 
 void draw() {
     background(255);
+    // los parametros se pasan a través de argumentos dentro de los métodos
     z.referentes();
 }
 
