@@ -65,6 +65,7 @@ class Referente {
     // y donde la posición de ellas surge de los valores de las temperaturas máximas y mínimas.
 
     /*
+
     si no se modifican los parámetros dentro del método no es necesario crearlos
     desde el void draw.
     12 veces se ejecuta la función que además tiene 12 veces un loop que aumenta
