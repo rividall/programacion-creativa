@@ -35,7 +35,7 @@ class Referentes {
         }
     }
 
-    void NAnual() {
+    void nAnual() {
         textSize(45);
         fill(colores[10]);
         text("2015", width / 2 - 50, height / 2 + 15);
@@ -53,7 +53,7 @@ class Referentes {
         }
     }
 
-    void NMes() {
+    void nMes() {
         background(255);
         textSize(45);
         fill(colores[10]);
@@ -82,7 +82,7 @@ class Referentes {
         ellipse(160 * 6 - 80, height / 12, 100, 100); //thunderstorm
     }
 
-    void NDia() {
+    void nDia() {
         background(255);
         textSize(45);
         fill(colores[10]);

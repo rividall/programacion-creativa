@@ -18,17 +18,17 @@ void setup() {
 void draw() {
     background(255);
     if (var1 == 1) { //AÑO
-        r.NAnual();
+        r.nAnual();
         r.anual();
     }
 
     if (var2 == 1) { //MES
-        r.NMes();
+        r.nMes();
         r.mes();
     }
 
     if (var3 == 1) { //DIA
-        r.NDia();
+        r.nDia();
         r.precip();
         r.windSpeed();
         r.evento();
