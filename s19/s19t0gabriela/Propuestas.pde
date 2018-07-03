@@ -23,7 +23,8 @@ class Propuestas {
       line(x, y, 100, y);
       popMatrix();
     }
-    //} descripción de lo que hará la función
+  }
+// descripción de lo que hará la función
   void marMes() {
     fill(0);
     textSize(60);

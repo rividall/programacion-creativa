@@ -1,3 +1,8 @@
+/*
+Nombre
+Descripción
+*/
+
 // Botones 1,2,3,4,5,6,7
 
 ArrayList<Propuestas> lista = new ArrayList<Propuestas>();
