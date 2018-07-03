@@ -13,8 +13,10 @@ int pro7 = 0;
 
 void setup(){
   size(1280,700);
+  // el loop no itera en lo absolulto
   for (int i = 0; i < 31; i++)
   p = new Propuestas ();
+  // por lo tanto esto no es necesario
   lista.add(p);
 
 }
@@ -43,6 +45,10 @@ void draw(){
   p.todosDias();
   }
 }
+
+/*
+¿Qué es " Se abre a.cir()."?
+*/
 void keyPressed() {
 if (key == '1') { // Se abre a.cir().
     pro1 = 1;

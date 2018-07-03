@@ -6,7 +6,7 @@ class Propuestas {
   Propuestas() {
     font = createFont("Calibri-Bold", 40);
   }
-
+  // descripción de lo que hará la función
   void eventos() {
     translate(width/2, height/2);
     fill(0);
@@ -23,7 +23,7 @@ class Propuestas {
       line(x, y, 100, y);
       popMatrix();
     }
-  }
+    //} descripción de lo que hará la función
   void marMes() {
     fill(0);
     textSize(60);
@@ -36,7 +36,7 @@ class Propuestas {
       line((31 + i*31), 390, (40 + i*31), 390);
     }
   }
-
+  // descripción de lo que hará la función
   void humMes() {
     fill(0);
     textSize(60);
@@ -50,7 +50,7 @@ class Propuestas {
       }
     }
   }
-
+  // descripción de lo que hará la función
   void eventosTrimestre() {
     fill(0);
     textSize(60);
@@ -65,7 +65,7 @@ class Propuestas {
       ellipse((65 + i*31), 220, 20, 20);
     }
   }
-
+  // descripción de lo que hará la función
   void eventosMar() {
     fill(0);
     textSize(60);
@@ -77,7 +77,7 @@ class Propuestas {
       ellipse((65 + i*31), 600, 20, 20);
     }
   }
-
+  // descripción de lo que hará la función
   void eventosHum() {
     fill(0);
     textSize(60);
@@ -91,7 +91,7 @@ class Propuestas {
       }
     }
   }
-
+  // descripción de lo que hará la función
   void todosDias() {
     fill(16, 119, 177);
     rect(0, 0, 1280, 700);
