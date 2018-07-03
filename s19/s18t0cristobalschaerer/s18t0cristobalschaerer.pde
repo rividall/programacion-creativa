@@ -24,7 +24,7 @@ void draw() {
     } else if (funcion2 == true) {
 
       a.ref2();
-    
+
     } else if (funcion3 == true) {
       for(int v=0;v<12;v++){
       a.ref3(v);

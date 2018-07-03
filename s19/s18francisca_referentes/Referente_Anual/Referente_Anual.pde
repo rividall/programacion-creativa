@@ -34,7 +34,7 @@ void draw() {
 }
 
 void keyPressed() {
-  
+
   if (key == ' ') {
     background (255);
     anual = true;

@@ -1,8 +1,8 @@
 Clase z;
 
-int ver; 
+int ver;
 int index;
-float ancho; 
+float ancho;
 
 boolean a, b, c, d, e, f;
 
