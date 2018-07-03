@@ -11,7 +11,7 @@ class Clase {
         this.valorf = valorf;
         this.valori = valori;
     }
-
+    // descripción de lo que hará la función y cómo se usa
     void referentes() {
         ref1(a);
         ref2(b);
@@ -21,7 +21,9 @@ class Clase {
         ref6(f);
         txt();
     }
-
+    // descripción de lo que hará la función y cómo se usa
+    // es necesario utilizar valores similares a los datos reales 40,
+    // ¿es similar a las velocidades?
     void ref1(boolean a) {
 
         if (a) {
@@ -34,7 +36,7 @@ class Clase {
             }
         }
     }
-
+    // descripción de lo que hará la función y cómo se usa
     void ref2(boolean b) {
 
         if (b) {
@@ -54,7 +56,7 @@ class Clase {
             }
         }
     }
-
+    // descripción de lo que hará la función y cómo se usa
     void ref3(boolean c) {
 
         if (c) {
@@ -71,7 +73,7 @@ class Clase {
             }
         }
     }
-
+    // descripción de lo que hará la función y cómo se usa
     void ref4(boolean d) {
 
         if (d) {
@@ -80,7 +82,7 @@ class Clase {
             }
         }
     }
-
+    // descripción de lo que hará la función y cómo se usa
     void ref5(boolean e) {
 
         if (e) {
@@ -93,7 +95,7 @@ class Clase {
             }
         }
     }
-
+    // descripción de lo que hará la función y cómo se usa
     void ref6(boolean f) {
         if (f) {
             for (int i = 0; i < 31; i++) {
@@ -106,7 +108,7 @@ class Clase {
             }
         }
     }
-
+    // descripción de lo que hará la función y cómo se usa
     void txt() {
         fill(0);
 
