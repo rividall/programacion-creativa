@@ -1,3 +1,7 @@
+/*
+nombre descripción y uso del programa 
+*/
+
 Clase[] objetos;
 Table tabla;
 int index;
