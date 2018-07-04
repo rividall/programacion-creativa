@@ -12,6 +12,7 @@ class Refer {
         this.col2 = col2;
 
     }
+    // descripción de lo que hará la función
     void coloruno() {
         float xo = map(i, 0, 365, 0, width);
         float col1 = map(var, 20, 36, 0, 255); // Mapeo
@@ -27,6 +28,7 @@ class Refer {
         ellipse(xo + 1, 550, 4, 4);
     }
 
+    // descripción de lo que hará la función
     void colordos() {
         float xo = map(i, 0, 365, 0, width);
         float col1 = map(var, 20, 36, 0, 255); // Mapeo
@@ -36,6 +38,7 @@ class Refer {
     }
 
 
+    // descripción de lo que hará la función
     void formauno() {
         fill(150, 150, 255);
         noStroke();
@@ -45,6 +48,7 @@ class Refer {
         rect(xo, 350, 2, ty);
     }
 
+    // descripción de lo que hará la función
     void formados() {
         float xo = map(i, 0, 365, 0, width);
         float ty = map(var, 20, 36, 20, 100); // Mapeo
@@ -60,6 +64,7 @@ class Refer {
 
     }
 
+    // descripción de lo que hará la función
     void formatres() {
         float xo = map(i, 0, 365, 0, width);
         float ty = map(var, 20, 36, 20, 100); // Mapeo
@@ -73,11 +78,13 @@ class Refer {
 
     }
 
+    // descripción de lo que hará la función
     void diag() {
         diagramacion();
         diagramacion2();
     }
 
+    // descripción de lo que hará la función
     void diagramacion() {
         float tyex = map(var, 20, 36, 100, 150);
         pushMatrix();
@@ -90,6 +97,7 @@ class Refer {
 
 
     }
+    // descripción de lo que hará la función
     void diagramacion2() {
         float tyex = map(var, 20, 36, 50, 70);
         float ty = map(var, 20, 36, 50, 150);
