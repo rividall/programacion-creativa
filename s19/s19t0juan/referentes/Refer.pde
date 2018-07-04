@@ -4,6 +4,9 @@ class Refer {
     float col1;
     float col2;
 
+    /*
+    El parámetro formas no se unsa en ningún momento dentro de la clase
+    */
     Refer(int i, float var, boolean formas) {
         //this.dia = dia;
         this.i = i;
