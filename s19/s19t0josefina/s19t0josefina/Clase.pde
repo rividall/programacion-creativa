@@ -42,6 +42,8 @@ class Referentes {
     }
 
     void mes() {
+        // esto debe ser flexible porque hay meses con diferentes días
+        // falta implementación
         for (float i = 0.5; i < 31; i++) {
             fill(colores[4]);
             ellipse(i * width / 30, height / 2, 25, 25);
