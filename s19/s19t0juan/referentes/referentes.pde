@@ -1,3 +1,8 @@
+/*
+Nombre
+Descripción
+Uso
+*/
 Table table;
 Refer[] bubbles;
 boolean formas, colores, diagramacion, segn;
