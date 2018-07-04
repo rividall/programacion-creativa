@@ -59,6 +59,7 @@ class Referentes {
         background(255);
         textSize(45);
         fill(colores[10]);
+        // ¿Cómo se pasará al siguiente mes?
         text("Mes", width / 2 - 20, 600);
     }
 
