@@ -1,5 +1,5 @@
 /*
-nombre descripción y uso del programa 
+nombre descripción y uso del programa
 */
 
 Clase[] objetos;
