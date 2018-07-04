@@ -1,16 +1,13 @@
 class Refer {
     int i;
-    float
-    var;
+    float var;
     float col1;
     float col2;
 
-    Refer(int i, float
-        var, boolean formas) {
+    Refer(int i, float var, boolean formas) {
         //this.dia = dia;
         this.i = i;
-        this.var =
-            var;
+        this.var = var;
         this.col1 = col1;
         this.col2 = col2;
 

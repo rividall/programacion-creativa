@@ -96,6 +96,9 @@ void draw() {
         bubbles[i].diagramacion();
     }
 
+    /*
+    Todo esto debe estar dentro el for loop anterior
+    */
     if (mouseX > limX && mouseY > limY && mouseX < limX2 && mouseY < limY2) {
         mSt = 0;
         mEnd = 30;
