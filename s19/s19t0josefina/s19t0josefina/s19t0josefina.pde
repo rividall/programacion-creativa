@@ -1,6 +1,9 @@
 // Universidad del Desarrollo, Josefina Hidalgo, Programación Creativa
 // Descripción general del programa
-
+/*
+En general, están bien escritos los métodos en relación a su separación por partes
+Pero no hay variabilidad en ellos y tambpoco se hacen cargo de esto en los titúlos
+*/
 ArrayList < Referentes > lista = new ArrayList < Referentes > ();
 Referentes r;
 
