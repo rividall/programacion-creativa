@@ -94,10 +94,12 @@ void draw() {
 
     for (int i = mSt; i < mEnd; i++) {
         bubbles[i].diagramacion();
-    }
 
+    }
     /*
     Todo esto debe estar dentro el for loop anterior
+    Se superpone con el resto, las variables mSt y mEnd deben ser modificacdas por los if
+    pero de otro modo que pueda salir el valor de esas variables
     */
     if (mouseX > limX && mouseY > limY && mouseX < limX2 && mouseY < limY2) {
         mSt = 0;
