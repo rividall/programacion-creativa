@@ -1,4 +1,4 @@
-// Descripción general y titulo
+ // Descripción general y titulo
 ArrayList<Figura> lista = new ArrayList<Figura>(); //Agregar la clase como lista
 Figura f;
 //Variables para separar sketchs
@@ -23,8 +23,7 @@ void draw() {
   if (var1 == 1) {//Cuadrados
     background(255);
     noStroke();
-    // este frameRate es para todo el programa, no se puede cambiar y se usa
-    // en el setup
+    // este frameRate es para todo el programa, no se puede cambiar y se usa en el setup
     frameRate(45); // 45 frames por segundo
     f.filacuad();
     f.sube();
