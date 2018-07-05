@@ -94,6 +94,10 @@ void draw() {
 
 		}
 	} else if (months == true) {
+		/* no se puede iterar 10 veces con objetos porque va los primeros 10 díasi
+		del año, a su vez no se puede iterar 12 veces en meses(), porque genera
+		120 ciclos
+		*/
 		for (int b = 0; b < 10; b++) {
 			objetos[b].meses();
 		}
