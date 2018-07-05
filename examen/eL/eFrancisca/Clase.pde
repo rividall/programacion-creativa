@@ -24,31 +24,31 @@ class Clase {
     this.dia = dia;
     this.event = event;
     // Temperatura
-    this.maxTempA = map(maxTempA, 29, 36, 50, 150); // Temperatura máxima para año
-    this.minTempA = map(minTempA, 21, 28, 50, 150); // Temperatura minima para año
-    this.maxTempM = map(maxTempM, 29, 36, 50, 150); // Temperatura máxima para mes
-    this.minTempM = map(minTempM, 21, 28, 150, 300); // Temperatura minima para mes
-    this.maxTempD = map(maxTempD, 29, 36, 100, 150); // Temperatura máxima para dia
-    this.minTempD = map(minTempD, 21, 28, 5, 40); // Temperatura minima para dia
+    this.maxTempA = map(maxTempA, 29, 36, 50, 150); // Temperatura máxima para año.
+    this.minTempA = map(minTempA, 21, 28, 50, 150); // Temperatura minima para año.
+    this.maxTempM = map(maxTempM, 29, 36, 50, 150); // Temperatura máxima para mes.
+    this.minTempM = map(minTempM, 21, 28, 150, 300); // Temperatura minima para mes.
+    this.maxTempD = map(maxTempD, 29, 36, 0, 250); // Temperatura máxima para dia.
+    this.minTempD = map(minTempD, 21, 28, 5, 40); // Temperatura minima para dia.
     // Humedad
-    this.maxHumA = map(maxHumA, 94, 100, 20, 50); // Humedad máxima para año
-    this.minHumA = map(minHumA, 23, 74, 20, 50); // Humedad minima para año
-    this.maxHumM = map(maxHumM, 94, 100, 525, 650); // Humedad máxima para mes
-    this.minHumM = map(minHumM, 23, 74, 400, 525); // Humedad minima para mes
+    this.maxHumA = map(maxHumA, 94, 100, 20, 50); // Humedad máxima para año.
+    this.minHumA = map(minHumA, 23, 74, 20, 50); // Humedad minima para año.
+    this.maxHumM = map(maxHumM, 94, 100, 525, 650); // Humedad máxima para mes.
+    this.minHumM = map(minHumM, 23, 74, 400, 525); // Humedad minima para mes.
 
-    // Visibilidad
-    this.maxVisA = map(maxVisA, 10, 27, 20, 50); // Visibilidad máxima para año
-    this.minVisA = map(minVisA, 0, 10, 20, 70); // Visibilidad minima para año
-    this.maxVisM = map(maxVisM, 10, 27, 525, 650); // Visibilidad máxima para mes
-    this.minVisM = map(minVisM, 0, 10, 400, 525); // Visibilidad minima para mes
+    // Visibilidad.
+    this.maxVisA = map(maxVisA, 10, 27, 20, 50); // Visibilidad máxima para año.
+    this.minVisA = map(minVisA, 0, 10, 20, 70); // Visibilidad minima para año.
+    this.maxVisM = map(maxVisM, 10, 27, 525, 650); // Visibilidad máxima para mes.
+    this.minVisM = map(minVisM, 0, 10, 400, 525); // Visibilidad minima para mes.
 
     // Velocidad viento
-    this.maxWindA = map(maxWindA, 6, 167, 20, 45); // Velocidad viento máximo para año
-    this.meanWindA = map(meanWindA, 2, 11, 20, 60); // Velocidad viento medio para año
-    this.maxWindM = map(maxWindM, 6, 167, 50, 150); // Velocidad viento máximo para mes
-    this.meanWindM = map(meanWindM, 2, 11, 100, 250); // Velocidad viento medio para mes
-    this.maxWindD = map(maxWindD, 6, 167, 50, 100); // Velocidad viento máximo para dia
-    this.meanWindD = map(meanWindD, 2, 11, 10, 20); // Velocidad viento medio para dia
+    this.maxWindA = map(maxWindA, 6, 167, 20, 45); // Velocidad viento máximo para año.
+    this.meanWindA = map(meanWindA, 2, 11, 20, 60); // Velocidad viento medio para año.
+    this.maxWindM = map(maxWindM, 6, 167, 50, 150); // Velocidad viento máximo para mes.
+    this.meanWindM = map(meanWindM, 2, 11, 100, 250); // Velocidad viento medio para mes.
+    this.maxWindD = map(maxWindD, 6, 167, 50, 100); // Velocidad viento máximo para dia.
+    this.meanWindD = map(meanWindD, 2, 11, 10, 20); // Velocidad viento medio para dia.
 
     font = createFont("Calibri-Bold", 45);
 
@@ -107,7 +107,7 @@ class Clase {
     }
     y += vely;
     noStroke();
-    fill(255, 200+maxTempD, 0);
+    fill(255, maxTempD, 0);
     ellipse(x, y, 100, 100);
   }
 
@@ -146,6 +146,11 @@ class Clase {
     fill(0, minHumM-300, 255);
     triangle (i-30, height/2, i+30, height/2, i, minHumM);
 
+
+/*
+Este bloque también puede reducirse, creando solo un if que escriba una variable String que almacena el numero de mes,
+o sacandolo de la base de datos para cada objeto
+*/
 
     if (mes == 1) {
       fill (255);

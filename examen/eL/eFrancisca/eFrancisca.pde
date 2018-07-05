@@ -1,5 +1,7 @@
-//Universidad del Desarrollo - Facultad de Diseño - Francisca Urenda
+/*Universidad del Desarrollo - Facultad de Diseño - Francisca Urenda
+  Descripción general y de uso aca.
 
+*/
 Clase[] objetos;
 Table tabla;
 int index;
@@ -27,29 +29,31 @@ void setup() {
     TableRow row = tabla.getRow(i);
     int mes = row.getInt("M");
     String dia = row.getString("D");
-    int maxTempA = row.getInt("Max TemperatureC"); // Temperatura máxima para año
-    int minTempA = row.getInt("Min TemperatureC"); // Temperatura minima para año
-    int maxTempM = row.getInt("Max TemperatureC"); // Temperatura máxima para mes
-    int minTempM = row.getInt("Min TemperatureC"); // Temperatura minima para mes
-    int maxTempD = row.getInt("Max TemperatureC"); // Temperatura máxima para dia
-    int minTempD = row.getInt("Min TemperatureC"); // Temperatura minima para dia
-    int maxHumA = row.getInt("Max Humidity"); // Humedad máxima para año
-    int minHumA = row.getInt("Min Humidity"); // Humedad minima para año
-    int maxHumM = row.getInt("Max Humidity"); // Humedad máxima para mes
-    int minHumM = row.getInt("Min Humidity"); // Humedad minima para mes
-    int maxVisA = row.getInt("Max VisibilityKm"); // Visibilidad máxima para año
-    int minVisA = row.getInt("Min VisibilitykM"); // Visibilidad minima para año
-    int maxVisM = row.getInt("Max VisibilityKm"); // Visibilidad máxima para mes
-    int minVisM = row.getInt("Min VisibilitykM"); // Visibilidad minima para mes
-    int maxWindA = row.getInt("Max Wind SpeedKm/h"); // Visibilidad máxima para año
-    int meanWindA = row.getInt("Mean Wind SpeedKm/h"); // Visibilidad minima para año
-    int maxWindM = row.getInt("Max Wind SpeedKm/h"); // Visibilidad máxima para mes
-    int meanWindM = row.getInt("Mean Wind SpeedKm/h"); // Visibilidad minima para mes
-    int maxWindD = row.getInt("Max Wind SpeedKm/h"); // Visibilidad máxima para dia
-    int meanWindD = row.getInt("Mean Wind SpeedKm/h"); // Visibilidad minima para dia
-    int event = row.getInt("Events"); // Eventos
+    int maxTempA = row.getInt("Max TemperatureC"); // Temperatura máxima para año.
+    int minTempA = row.getInt("Min TemperatureC"); // Temperatura minima para año.
+    int maxTempM = row.getInt("Max TemperatureC"); // Temperatura máxima para mes.
+    int minTempM = row.getInt("Min TemperatureC"); // Temperatura minima para mes.
+    int maxTempD = row.getInt("Max TemperatureC"); // Temperatura máxima para dia.
+    int minTempD = row.getInt("Min TemperatureC"); // Temperatura minima para dia.
+    int maxHumA = row.getInt("Max Humidity"); // Humedad máxima para año.
+    int minHumA = row.getInt("Min Humidity"); // Humedad minima para año.
+    int maxHumM = row.getInt("Max Humidity"); // Humedad máxima para mes.
+    int minHumM = row.getInt("Min Humidity"); // Humedad minima para mes.
+    int maxVisA = row.getInt("Max VisibilityKm"); // Visibilidad máxima para año.
+    int minVisA = row.getInt("Min VisibilitykM"); // Visibilidad minima para año.
+    int maxVisM = row.getInt("Max VisibilityKm"); // Visibilidad máxima para mes.
+    int minVisM = row.getInt("Min VisibilitykM"); // Visibilidad minima para mes.
+    int maxWindA = row.getInt("Max Wind SpeedKm/h"); // Visibilidad máxima para año.
+    int meanWindA = row.getInt("Mean Wind SpeedKm/h"); // Visibilidad minima para año.
+    int maxWindM = row.getInt("Max Wind SpeedKm/h"); // Visibilidad máxima para mes.
+    int meanWindM = row.getInt("Mean Wind SpeedKm/h"); // Visibilidad minima para mes.
+    int maxWindD = row.getInt("Max Wind SpeedKm/h"); // Visibilidad máxima para dia.
+    int meanWindD = row.getInt("Mean Wind SpeedKm/h"); // Visibilidad minima para dia.
+    int event = row.getInt("Events"); // Eventos.
 
-    objetos[i] = new Clase(mes, dia, maxTempA, minTempA, maxTempM, minTempM, maxTempD, minTempD, maxHumA, minHumA, maxHumM, minHumM, maxVisM, minVisM, maxVisA, minVisA, maxWindA, meanWindA, maxWindM, meanWindM, maxWindD, meanWindD, event, i);
+    objetos[i] = new Clase(mes, dia, maxTempA, minTempA, maxTempM, minTempM, maxTempD, 
+    minTempD, maxHumA, minHumA, maxHumM, minHumM, maxVisM, minVisM, maxVisA, minVisA, 
+    maxWindA, meanWindA, maxWindM, meanWindM, maxWindD, meanWindD, event, i);
   }
   background(255);
 
@@ -78,6 +82,10 @@ void draw() {
       if (k>indx2) k=indx1;
     }
   }
+/*
+Este bloque completo se puede escribir con menos líneas si se definen los meses que tienen tales cantidades de días
+y se utilizan solo 3 if statements para sumar un número a los indx1 y 2.
+*/
 
   if (indx3 == 1) {
     indx1 = 0;
@@ -168,7 +176,7 @@ void keyPressed() {
     anual = true;
   }
   if (keyCode == RIGHT) {
-    if (index >= 364) { // Añadir navegacion hacia atras con tecla derecha (dia)
+    if (index >= 364) { // Añadir navegacion hacia atras con tecla derecha (dia).
       index = 0;
     } else {
       index++;
@@ -176,21 +184,21 @@ void keyPressed() {
     }
   }
   if (keyCode == LEFT) {
-    if (index < 1) { // Añadir navegacion hacia atras con tecla izquierda (dia)
+    if (index < 1) { // Añadir navegacion hacia atras con tecla izquierda (dia).
       index = 364;
     } else {
       index--;
       println(index);
     }
   }
-  if (keyCode == UP) { // Añadir navegacion hacia atras con tecla arriba (mes)
+  if (keyCode == UP) { // Añadir navegacion hacia atras con tecla arriba (mes).
     if (indx3 <= 1) {
       indx3 = 12;
     } else {
       indx3--;
     }
   }
-  if (keyCode == DOWN) { // Añadir navegacion hacia atras con tecla abajo (mes)
+  if (keyCode == DOWN) { // Añadir navegacion hacia atras con tecla abajo (mes).
     if (indx3 >= 12) {
       indx3 = 1;
     } else {
