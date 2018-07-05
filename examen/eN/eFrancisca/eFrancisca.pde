@@ -1,4 +1,7 @@
 //Universidad del Desarrollo - Facultad de Diseño - Francisca Urenda
+/*
+Descripción que fue escrita en el README.md
+*/
 
 Clase[] objetos;
 Table tabla;
