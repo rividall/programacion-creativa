@@ -1,14 +1,18 @@
-// La visualización de datos se representa en 3 niveles, para acceder a ellos se usan
-// las teclas "p"(datos anuales), "m" (datos mensuales) y "w"(datos por días).
-// En el primero se visualiza las temperaturas promedio de cada día durante un año.
-// Se ven representados en lineas (una por día), el largo de la linea indica la temperatura promedio.
-// Se muestran 4 colores distintos los cuales muestran si se dan ciertos eventos esos días, el verde
-//muestra los días en que no ocurrió ningún evento,
-// el azul indica que esos dias hubo lluvia, el rojo indica la presencia de neblina y por último el
-//magenta muestra cuando hubo lluvia y neblina simultaneamene.
-// posee  un funcionamiento de navegacion en base al desplazamiento del mouse por el eje x, en donde
-//se van añadiendo dias dependiendo de la posición.
-// el background indica con colores  en que estación del año se esta visualizando.
+// Nombre, carrera, mención, año
+
+/*
+La visualización de datos se representa en 3 niveles, para acceder a ellos se usan
+las teclas "p"(datos anuales), "m" (datos mensuales) y "w"(datos por días).
+En el primero se visualiza las temperaturas promedio de cada día durante un año.
+Se ven representados en lineas (una por día), el largo de la linea indica la temperatura promedio.
+Se muestran 4 colores distintos los cuales muestran si se dan ciertos eventos esos días, el verde
+muestra los días en que no ocurrió ningún evento,
+el azul indica que esos dias hubo lluvia, el rojo indica la presencia de neblina y por último el
+magenta muestra cuando hubo lluvia y neblina simultaneamene.
+posee un funcionamiento de navegacion en base al desplazamiento del mouse por el eje x, en donde
+se van añadiendo dias dependiendo de la posición.
+El background indica con colores  en que estación del año se esta visualizando.
+*/
 
 Clase[] objetos;
 Table tabla;
