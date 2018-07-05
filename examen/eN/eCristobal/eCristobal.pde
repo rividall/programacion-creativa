@@ -57,8 +57,7 @@ void setup() {
 		// Con esas variables construyo un objeto
 		objetos[i] = new Clase(mes, dia, maxima, media, minima,minHum, maxHum, meanHum,promanualtmax,promanualtmin, promtmeanmes, dirViento, dewmax, dewmean, dewmin, meanviento, evento,tmaxmes,tminmes);
 	}
-	// String[] fontList = PFont.list();
-	// printArray(fontList);
+	
 	background(253);
 }
 
