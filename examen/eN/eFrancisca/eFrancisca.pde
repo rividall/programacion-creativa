@@ -63,6 +63,7 @@ void setup() {
 void draw() {
 
   if (diario) {
+      // los nombres de las funciones deben ser representativos de lo que hacen
     objetos[index].funcion(index);
     objetos[index].fondo();
   }
@@ -172,7 +173,7 @@ void keyPressed() {
       index = 0;
     } else {
       index++;
-      println(index);
+      //println(index);
     }
   }
   if (keyCode == LEFT) {
@@ -180,7 +181,7 @@ void keyPressed() {
       index = 364;
     } else {
       index--;
-      println(index);
+      //println(index);
     }
   }
   if (keyCode == UP) { // Añadir navegacion hacia atras con tecla arriba (mes)
