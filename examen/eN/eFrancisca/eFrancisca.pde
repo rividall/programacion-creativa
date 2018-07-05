@@ -142,11 +142,9 @@ void draw() {
     indx2 = 364;
   }
 
-if (anual) {
+  if (anual) {
     background(255);
-  for (int i=0; i<objetos.length; i++) {
-
-
+    for (int i=0; i<objetos.length; i++) {
       objetos[i].anual();
     }
   }
