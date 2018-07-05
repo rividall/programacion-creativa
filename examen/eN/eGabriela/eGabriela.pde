@@ -3,7 +3,7 @@
 // Examen
 
 /*
-Descripción general y uso
+Descripción general y uso.
 */
 Bruss[] objetos;
 Table tabla;
