@@ -19,7 +19,7 @@ Table tabla;
 int index;
 boolean years = false;
 boolean months = false;
-boolean days = false;
+boolean days = true;
 float n;
 void setup() {
 	size(1280, 700);
@@ -83,6 +83,7 @@ void draw() {
 			text("Primavera", (width / 2) - 100, 670);
 			textSize(30);
 		}
+		// descripción
 		text("Verde -> Ningún evento", width - 400, height - 200);
 		text("Azul -> LLuvia", width - 400, height - 150);
 		text("Rojo -> Neblina", width - 400, height - 100);
@@ -109,6 +110,7 @@ void draw() {
 		text("Azul -> Mínimo rocío", width - 400, height - 50);
 		textSize(10);
 	} else {
+		// falta un color, el valor lo toma de la última variable
 		text("Valdivia - Chile", width / 3 - 60, height / 2);
 		textSize(20);
 		text("p = anual - m = mensual - w = diario", width / 3 + 70, height / 2 + 80);

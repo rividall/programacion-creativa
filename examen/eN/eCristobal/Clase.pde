@@ -82,6 +82,11 @@ class Clase {
 
 	//Se muestran los datos por día, en donde la rotación de las elipses equivale a la dirección del viento.
 	//y la posición de las elipses son el número max de rocío y en las segundas elipses son el mínimo y el tamaño son las medias.
+
+	/*
+	Mal implementada, no existe control del código, tampoco existe una relación
+	entre los valores y el resultado, al tener viento representando lluvia
+	*/
 	void dias(int index) {
 		txt();
 		pushMatrix();
