@@ -63,7 +63,7 @@ void setup() {
 
 void draw() {
 	background(0, 220, 0);
-	//el background cambia según la estacion del año en la que se encuentre el dato
+	//el background cambia según la estación del año en la que se encuentre el dato
 	// Uso de los objetos como siempre
 	if (years == true) {
 		if (n <= 80 || n > 356) {
@@ -89,9 +89,6 @@ void draw() {
 		text("Magenta -> Neblina-LLuvia", width - 400, height - 50);
 		textSize(10);
 		n = map(mouseX, 0, width, 0, 365); //navegación eje x
-		if (mouseY < height) {
-			index = int(n);
-		}
 		for (int i = 0; i < n; i++) {
 			objetos[i].funcion(i);
 
