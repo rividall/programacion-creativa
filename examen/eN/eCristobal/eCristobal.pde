@@ -17,7 +17,7 @@ El background indica con colores  en que estación del año se esta visualizando
 Clase[] objetos;
 Table tabla;
 int index;
-boolean years= false;
+boolean years = false;
 boolean months = false;
 boolean days = false;
 float n;
@@ -45,7 +45,7 @@ void setup() {
 		int promanualtmin = row.getInt("promATmin");
 		int promhummes = row.getInt("promhumes");
 		int promtmeanmes = row.getInt("promtmeanmes");
- 		int dirViento = row.getInt("WindDirDegrees");
+		int dirViento = row.getInt("WindDirDegrees");
 		int dewmax = row.getInt("Dew PointC");
 		int dewmean = row.getInt("MeanDew PointC");
 		int dewmin = row.getInt("Min DewpointC");
@@ -55,55 +55,83 @@ void setup() {
 		float tminmes = row.getFloat("mintmes");
 
 		// Con esas variables construyo un objeto
-		objetos[i] = new Clase(mes, dia, maxima, media, minima,minHum, maxHum, meanHum,promanualtmax,promanualtmin, promtmeanmes, dirViento, dewmax, dewmean, dewmin, meanviento, evento,tmaxmes,tminmes);
+		objetos[i] = new Clase(mes, dia, maxima, media, minima, minHum, maxHum, meanHum, promanualtmax, promanualtmin, promtmeanmes, dirViento, dewmax, dewmean, dewmin, meanviento, evento, tmaxmes, tminmes);
 	}
-	
+
 	background(253);
 }
 
 void draw() {
-	background(0,220,0);
+	background(0, 220, 0);
 	//el background cambia según la estacion del año en la que se encuentre el dato
 	// Uso de los objetos como siempre
-	if(years == true){
-		if(n<=80 || n >356){background(255,255,0);text("Verano",(width/2)-100,670); textSize(30);}
-		else if(n>80 && n <=173 ){background(255,153,0); text("Otoño",(width/2)-100,670); textSize(30);}
-		else if(n >173 && n<=267){background(0,180,255);text("Invierno",(width/2)-100,670); textSize(30);}
-		else if(n > 267 && n<= 356){background(0,255,255);text("Primavera",(width/2)-100,670); textSize(30);}
-		text("Verde -> Ningún evento",width-400,height -200);
-		text("Azul -> LLuvia",width-400,height -150);
-		text("Rojo -> Neblina",width-400, height -100);
-		text("Magenta -> Neblina-LLuvia", width-400,height-50);
+	if (years == true) {
+		if (n <= 80 || n > 356) {
+			background(255, 255, 0);
+			text("Verano", (width / 2) - 100, 670);
+			textSize(30);
+		} else if (n > 80 && n <= 173) {
+			background(255, 153, 0);
+			text("Otoño", (width / 2) - 100, 670);
+			textSize(30);
+		} else if (n > 173 && n <= 267) {
+			background(0, 180, 255);
+			text("Invierno", (width / 2) - 100, 670);
+			textSize(30);
+		} else if (n > 267 && n <= 356) {
+			background(0, 255, 255);
+			text("Primavera", (width / 2) - 100, 670);
+			textSize(30);
+		}
+		text("Verde -> Ningún evento", width - 400, height - 200);
+		text("Azul -> LLuvia", width - 400, height - 150);
+		text("Rojo -> Neblina", width - 400, height - 100);
+		text("Magenta -> Neblina-LLuvia", width - 400, height - 50);
 		textSize(10);
-		n=map(mouseX,0,width,0,365);//navegación eje x
-	 if(mouseY<height){ index=int(n);}
-	 for (int i = 0; i <n; i ++) {
-	  objetos[i].funcion(i);
+		n = map(mouseX, 0, width, 0, 365); //navegación eje x
+		if (mouseY < height) {
+			index = int(n);
+		}
+		for (int i = 0; i < n; i++) {
+			objetos[i].funcion(i);
 
-	 }
- } else if (months == true){
-	 for (int b = 0; b < 10;b++){
-		 objetos[b].meses();
-	 }
- }else if(days == true){
-		 objetos[index].dias(index);
-		 	textSize(20);
-			text("Barra espacio para reiniciar contador de días",width/3+60,25);
-		 text("Rojo -> Máximo rocío",width-400, height -100);
- 		text("Azul -> Mínimo rocío", width-400,height-50);
-	 	textSize(10);
- }else {text("Valdivia - Chile",width/3-60,height/2);textSize(20);text("p = anual - m = mensual - w = diario",width/3+70,height/2+80); textSize(80);}
+		}
+	} else if (months == true) {
+		for (int b = 0; b < 10; b++) {
+			objetos[b].meses();
+		}
+	} else if (days == true) {
+		objetos[index].dias(index);
+		textSize(20);
+		text("Barra espacio para reiniciar contador de días", width / 3 + 60, 25);
+		text("Rojo -> Máximo rocío", width - 400, height - 100);
+		text("Azul -> Mínimo rocío", width - 400, height - 50);
+		textSize(10);
+	} else {
+		text("Valdivia - Chile", width / 3 - 60, height / 2);
+		textSize(20);
+		text("p = anual - m = mensual - w = diario", width / 3 + 70, height / 2 + 80);
+		textSize(80);
+	}
 }
 
 void keyPressed() {
-	if(key == 'p'){ years = !years;}
-	if(key == 'm'){ months = !months;}
-	if(key == 'w'){days = !days;}
-  if(key == ' '){index = -1;}
-		if(index > 365) {
-        index = 0;
-    } else if (index < 365){
-        index++;
-    }
+	if (key == 'p') {
+		years = !years;
+	}
+	if (key == 'm') {
+		months = !months;
+	}
+	if (key == 'w') {
+		days = !days;
+	}
+	if (key == ' ') {
+		index = -1;
+	}
+	if (index > 365) {
+		index = 0;
+	} else if (index < 365) {
+		index++;
+	}
 
 }
