@@ -98,7 +98,7 @@ class Clase {
     pushMatrix();
     translate(width/2, height/2);
     for (int u= 0; u < totdias; u++ ) {// el número de esferas equivale a los 365 días del año.
-      rotate(radians(index* 360/dirViento));
+      rotate(radians(index* 360/dirViento)); // Esta rotación ocurre totdias veces.
       stroke(0);
       strokeWeight(1);
       fill(255, 0, 0);
@@ -108,7 +108,7 @@ class Clase {
     }
 
     for (int e = 0; e<dewmax; e++) { //líneas representando lluvia.
-      rotate(dirViento);
+      rotate(dirViento); // Esta rotación se suma a la anterior, pues se encuentran dentro del mismo push y popMatrix().
       strokeWeight(10);
       line(x, y, x+5, y+5);
       x += dirViento/5;
