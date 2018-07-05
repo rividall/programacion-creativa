@@ -82,6 +82,10 @@ void draw() {
       if (k>indx2) k=indx1;
     }
   }
+/*
+Este bloque completo se puede escribir con menos líneas si se definen los meses que tienen tales cantidades de días
+y se utilizan solo 3 if statements para sumar un número a los indx1 y 2.
+*/
 
   if (indx3 == 1) {
     indx1 = 0;

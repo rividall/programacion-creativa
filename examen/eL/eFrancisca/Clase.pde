@@ -147,6 +147,11 @@ class Clase {
     triangle (i-30, height/2, i+30, height/2, i, minHumM);
 
 
+/*
+Este bloque también puede reducirse, creando solo un if que escriba una variable String que almacena el numero de mes,
+o sacandolo de la base de datos para cada objeto
+*/
+
     if (mes == 1) {
       fill (255);
       textSize(45);
