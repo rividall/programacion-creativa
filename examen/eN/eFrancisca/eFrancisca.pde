@@ -18,6 +18,7 @@ Primero se define en el void setup las variables que van a leer las columnas
  */
 
 
+// descripciones de bloques de código
 void setup() {
   size(1280, 700);
   tabla = loadTable("Iquitos.csv", "header");
@@ -60,6 +61,7 @@ void setup() {
   text("Iquitos, Perú", 400, 350);
 }
 
+// descripciones de bloques de código
 void draw() {
 
   if (diario) {
@@ -140,15 +142,18 @@ void draw() {
     indx2 = 364;
   }
 
-
+if (anual) {
+    background(255);
   for (int i=0; i<objetos.length; i++) {
-    if (anual) {
+
+
       objetos[i].anual();
     }
   }
 }
 
 
+// descripciones de bloques de código
 void keyPressed() {
   if (key == '1') {
     background(h);
