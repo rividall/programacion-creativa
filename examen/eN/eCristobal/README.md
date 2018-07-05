@@ -11,8 +11,6 @@ el azul indica que esos días hubo lluvia, el rojo indica la presencia de neblin
 posee  un funcionamiento de navegaciónen base al desplazamiento del mouse por el eje x, en donde se van añadiendo días dependiendo de la posición.
 el background indica con colores en que estación del año se esta visualizando.
 
-![1530811572692](C:\Users\CHRIST~1\AppData\Local\Temp\1530811572692.png)
-
 
 
 La segunda visualización muestra por mes, las temperaturas máximas y mínimas de cada mes y el nivel de humedad.
@@ -23,5 +21,3 @@ La humedad se puede ver en la opacidad de cada círculo y el valor de máximas y
 
 La tercera visualización muestra datos por día en los que se pueden ver el nivel de rocío y la dirección del viento.
 Con cualquier tecla uno puede pasar de día en día, en donde las elipses demuestran en que dirección va el viento y cuales fueron los mínimos y máximos niveles de rocío.
-
-![1530811809412](C:\Users\CHRIST~1\AppData\Local\Temp\1530811809412.png)
