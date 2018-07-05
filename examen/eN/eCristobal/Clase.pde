@@ -71,14 +71,12 @@ class Clase {
 	//Se visualizan ellipses con posición en el eje y  que varía según las max temperaturas y su opacidad varía según la humedad del lugar en meses
 	void meses() {
 		pushMatrix();
-		for (int a = 0; a < 12; a++) {
 			strokeWeight(1);
 			noStroke();
 			fill(0, 0, 230, humedadmedia);
 			ellipse(300, tminmes * 25 + 50, 50, 50);
 			fill(0, 0, 230, humedadmedia / 5);
 			ellipse(1000, tmaxmes * 10 + 21, 200, 200);
-		}
 		popMatrix();
 	}
 
