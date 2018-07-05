@@ -2,7 +2,7 @@ class Clase {
   String mes, dia;
   float maxima, minima, temp, media;
   float humedadmin, humedadmax, humedadmedia, 	promedioanualtmax, promedioanualtmin, 
-  promtmeanmes, dirViento, dewmax, dewmean, dewmin, meanviento;
+    promtmeanmes, dirViento, dewmax, dewmean, dewmin, meanviento;
   PFont font;
   float r;
   float proman, tmaxmes, tminmes, x;
@@ -11,9 +11,9 @@ class Clase {
   color [] colores;
 
   Clase(String mes, String dia, float maxima, float media, float minima, float minHum, 
-  float maxHum, float meanHum, float promanualtmax, float promanualtmin, float promtmeanmes, 
-  float dirViento, float dewmax, float dewmean, float dewmin, float meanviento, int evento, 
-  float tmaxmes, float tminmes) {
+    float maxHum, float meanHum, float promanualtmax, float promanualtmin, float promtmeanmes, 
+    float dirViento, float dewmax, float dewmean, float dewmin, float meanviento, int evento, 
+    float tmaxmes, float tminmes) {
     this.mes = mes;
     this.dia = dia;
     this.maxima = map(maxima, 27, 34, 0, 255);
@@ -76,18 +76,16 @@ class Clase {
 
   /*
   Se visualizan ellipses con posición en el eje y  que varía según las max temperaturas y su opacidad varía según la 
-  humedad del lugar en meses.
-  */
+   humedad del lugar en meses.
+   */
   void meses() {
-    pushMatrix();
-    for (int a = 0; a<12; a++) {
-      strokeWeight(1);
-      noStroke();
-      fill(0, 0, 230, humedadmedia);
-      ellipse(300, tminmes*25+50, 50, 50);
-      fill(0, 0, 230, humedadmedia/5);
-      ellipse(1000, tmaxmes*10+21, 200, 200);
-    }
+    pushMatrix(); // 
+    strokeWeight(1);
+    noStroke();
+    fill(0, 0, 230, humedadmedia);
+    ellipse(300, tminmes*25+50, 50, 50);
+    fill(0, 0, 230, humedadmedia/5);
+    ellipse(1000, tmaxmes*10+21, 200, 200);
     popMatrix();
   }
 

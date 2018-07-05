@@ -96,7 +96,7 @@ void draw() {
       objetos[i].funcion(i);
     }
   } else if (months == true) {
-    for (int b = 0; b < 10; b++) {
+    for (int b = 0; b < 10; b++) { // Este forLoop llama a los primeros 11 días del año, no los 12 meses, como se presume.
       objetos[b].meses();
     }
   } else if (days == true) {
