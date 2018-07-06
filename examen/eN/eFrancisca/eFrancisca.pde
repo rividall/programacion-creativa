@@ -1,4 +1,7 @@
 //Universidad del Desarrollo - Facultad de Diseño - Francisca Urenda
+/*
+Descripción que fue escrita en el README.md
+*/
 
 Clase[] objetos;
 Table tabla;
@@ -18,6 +21,7 @@ Primero se define en el void setup las variables que van a leer las columnas
  */
 
 
+// descripciones de bloques de código
 void setup() {
   size(1280, 700);
   tabla = loadTable("Iquitos.csv", "header");
@@ -60,9 +64,11 @@ void setup() {
   text("Iquitos, Perú", 400, 350);
 }
 
+// descripciones de bloques de código
 void draw() {
 
   if (diario) {
+      // los nombres de las funciones deben ser representativos de lo que hacen
     objetos[index].funcion(index);
     objetos[index].fondo();
   }
@@ -139,15 +145,16 @@ void draw() {
     indx2 = 364;
   }
 
-
-  for (int i=0; i<objetos.length; i++) {
-    if (anual) {
+  if (anual) {
+    background(255);
+    for (int i=0; i<objetos.length; i++) {
       objetos[i].anual();
     }
   }
 }
 
 
+// descripciones de bloques de código
 void keyPressed() {
   if (key == '1') {
     background(h);
@@ -172,7 +179,7 @@ void keyPressed() {
       index = 0;
     } else {
       index++;
-      println(index);
+      //println(index);
     }
   }
   if (keyCode == LEFT) {
@@ -180,7 +187,7 @@ void keyPressed() {
       index = 364;
     } else {
       index--;
-      println(index);
+      //println(index);
     }
   }
   if (keyCode == UP) { // Añadir navegacion hacia atras con tecla arriba (mes)

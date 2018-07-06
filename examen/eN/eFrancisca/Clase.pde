@@ -13,7 +13,7 @@ class Clase {
   color h;
   int r = 200;
 
-  float xpos, ypos; 
+  float xpos, ypos;
   int xdirection = 1;
   int ydirection = 1;
 
@@ -28,7 +28,7 @@ class Clase {
     this.minTempA = map(minTempA, 21, 28, 50, 150); // Temperatura minima para año
     this.maxTempM = map(maxTempM, 29, 36, 50, 150); // Temperatura máxima para mes
     this.minTempM = map(minTempM, 21, 28, 150, 300); // Temperatura minima para mes
-    this.maxTempD = map(maxTempD, 29, 36, 100, 150); // Temperatura máxima para dia
+    this.maxTempD = map(maxTempD, 29, 36, 0, 255); // Temperatura máxima para dia
     this.minTempD = map(minTempD, 21, 28, 5, 40); // Temperatura minima para dia
     // Humedad
     this.maxHumA = map(maxHumA, 94, 100, 20, 50); // Humedad máxima para año
@@ -76,7 +76,7 @@ class Clase {
     if (event == 10) h = color(#E4EFEF); // Nieve
   }
 
-
+// los nombres de las funciones deben ser representativos de lo que hacen
   void funcion(int index) {
     diario();
     txt(index);
@@ -107,7 +107,7 @@ class Clase {
     }
     y += vely;
     noStroke();
-    fill(255, 200+maxTempD, 0);
+    fill(255, maxTempD, 0);
     ellipse(x, y, 100, 100);
   }
 

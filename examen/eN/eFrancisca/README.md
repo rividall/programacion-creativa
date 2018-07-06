@@ -24,7 +24,7 @@ En el inicio del programa, podrán presionar las teclas 1 para los dias, 2 para
 los meses y 3 para el año.
 
 En el programa que va de día, se verá un fondo que cambia de color dependiendo
-del eb¡vento de aquel dia, una elipse que cambia de tamaño y color dependiendo
+del evento de aquel dia, una elipse que cambia de tamaño y color dependiendo
 de la temperatura máxima y velocidad dependiendo de la temperatura minima y una
 elipse que rebota cuyo tamaño y color cambian dependiendo de la velocidad del
 viento máxima y velocidad cambia dependiendo de la velocidad del viento medio.
