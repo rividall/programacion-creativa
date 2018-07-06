@@ -1,13 +1,13 @@
 class Clase {
 
-  // Variables para la clase.
+  // Variables para la clase
   int index; 
   float maxTemp, minTemp, minTempSem, maxTempSem, velVie, hum, maxRo, minRo, maxRoSem, minRoSem, dirVie; 
 
   float y;
   float angle, r;
 
-  // Genero mi constructor.
+  // Genero mi constructor
   Clase(int index, int maxTemp, int minTemp, int maxRo, int minRo, int velVie, int dirVie, int hum) {
 
     this.index = index;
@@ -24,40 +24,35 @@ class Clase {
     this.dirVie = map(dirVie, 0, 359, 0, 360);
   }
 
-  // Void con toda la información que se mostrara anualmente. 
+  // void con toda la información que se mostrara anualmente 
   void anoInfo() {
     anoTemp(ta);
     anilloAno(fa);
     varRocio(roca);
   }
 
-  // Void con la información a mostrar semestralmente.
+  // void con la información a mostrar semestralmente
   void semestresInfo() {
     primSem(valor);
     segSem(valor);
   }
 
-  /*
-                Datos mensuales                  
-   */
+  //////////////////////////////////////////////////////
+  //                 Datos mensuales                  //
+  //////////////////////////////////////////////////////
 
 
-  // Void para dibujar todos los componentes según el mes.
+  // void para dibujar todos los componentes según el mes
   void mesesPrimSem(float v) {
 
-    /* v = 1 -> Rocios máximos y minimos.
-     v = 2 -> Velocidades del viento.
-     v = 3 -> Temperaturas Máximas y mínimas.
-     */
+    // v = 1 -> Rocios máximos y minimos
+    // v = 2 -> Velocidades del viento
+    // v = 3 -> Temperaturas Máximas y mínimas
+
     noStroke();
     rectMode(CENTER);
 
-    /*
-No es necesario escribir un método tan largo para que cambie cada mes, se puede usar una sola
-     función o método que a traves de las variables que reciba dibuje una u otra cosa.
-     */
-
-    // Enero.
+    // Enero
     if (index > 0 && index < 32) {
 
       if (v == 1) {
@@ -81,7 +76,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Febrero.
+    // Febrero
     if (index > 31 && index < 60) {
 
       if (v == 1) {
@@ -105,7 +100,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Marzo.
+    // Marzo
     if (index > 59 && index < 91) {
 
       if (v == 1) {
@@ -129,7 +124,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Abril.
+    // Abril
 
     if (index > 90 && index < 121) {
       if (v == 1) {
@@ -153,7 +148,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Mayo.
+    // Mayo
 
     if (index > 120 && index < 152) {
       if (v == 1) {
@@ -177,7 +172,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Junio.
+    // Junio
     if (index > 151 && index < 182) {
       if (v == 1) {
         fill(col[1]);
@@ -201,13 +196,13 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
     }
   }
 
-  // void para dibujar todos los componentes según el mes del segundo semestre.
+  // void para dibujar todos los componentes según el mes del segundo semestre
   void mesesSecSem(float v) {
 
     noStroke();
     rectMode(CENTER);
 
-    // Julio.
+    // Julio
     if (index > 181 && index < 213) {
       if (v == 1) {
         fill(col[1]);
@@ -230,7 +225,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Agosto.
+    // Agosto
     if (index > 212 && index < 244) {
       if ( v == 1) {
         fill(col[1]);
@@ -252,7 +247,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Septiembre.
+    // Septiembre
     if (index > 243 && index < 274) {
       if ( v == 1) {
         fill(col[1]);
@@ -275,7 +270,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Octubre.
+    // Octubre
     if (index > 273 && index < 305) {
       if ( v == 1 ) {
         fill(col[1]);
@@ -298,7 +293,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Noviembre.
+    // Noviembre
     if (index > 304 && index < 335) {
       if ( v == 1) {
         fill(col[1]);
@@ -321,7 +316,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       }
     }
 
-    // Diciembre.
+    // Diciembre
     if (index > 333) {
       if ( v == 1) {
         fill(col[1]);
@@ -346,13 +341,14 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
   }
 
 
-  /*
-                       Mensual                      
-   */
+
+  //////////////////////////////////////////////////////
+  //                     Mensual                      //
+  //////////////////////////////////////////////////////
 
   void mensualInfo( float i) {
 
-    float tempMed = (maxTemp + minTemp)/2; // No utilizada.
+    float tempMed = (maxTemp + minTemp)/2;
     float angulo = radians(dirVie);
     r = 20;
 
@@ -361,7 +357,7 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
     fill(col[0]);
     ellipse(i, height/2, hum, hum);
 
-    // Temperatura.
+    // Temperatura
 
     stroke(col[2]);
     line(i, maxTemp, i, 150);
@@ -393,23 +389,24 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
     popMatrix();
   }
 
-  /*
-                    Semestral                      
-   */
+
+  //////////////////////////////////////////////////////
+  //                   Semestral                      //
+  //////////////////////////////////////////////////////       
 
   void primSem(boolean valor) {   
 
     // conecto todos los dibujos del primer semestre en el void según las boolean
     pushMatrix();
     translate(0, -150);
-    if (valor = roSem) { // Para consultar una equivalencia se utiliza ==, si no, el programa asigna valor nuevo.
+    if (valor = roSem) {
       mesesPrimSem(1);
     }
-    if (valor = velVieSem) { // Bis.
+    if (valor = velVieSem) {
       mesesPrimSem(2);
     }
 
-    if (valor = tempSem) { // Bis. Bis.
+    if (valor = tempSem) {
       mesesPrimSem(3);
     }
 
@@ -421,26 +418,27 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
     // conecto todos los dibujos del segundo semestre en el void según las boolean
     pushMatrix();
     translate(0, 200);
-    if (valor = roSem) { // Para consultar una equivalencia se utiliza ==, si no, el programa asigna valor nuevo.
+    if (valor = roSem) {
       mesesSecSem(1);
     }
-    if (valor = velVieSem) { // Bis.
+    if (valor = velVieSem) {
       mesesPrimSem(2);
     }
 
-    if (valor = tempSem) { // Bis. Bis.
+    if (valor = tempSem) {
       mesesSecSem(3);
     }
     popMatrix();
   }
-  /*
-                        Anual                        
-   */
+
+  //////////////////////////////////////////////////////
+  //                     Anual                        //
+  //////////////////////////////////////////////////////
 
 
   void varRocio(boolean roca) {
 
-    // Map para dibujar el punto 0 de las variables.
+    // map para dibujar el punto 0 de las variables
     float gradoC = map(0, -15, 23, 0, 350);
 
     if (roca) {
@@ -449,14 +447,14 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
 
       translate(width/3, height/2);
       rotate(radians(270));
-      rotate(radians(index * 360 / 365)); // 360 grados / 365 días.
+      rotate(radians(index * 360 / 365)); // 360 grados / 365 dias 
       noStroke();
       fill(col[1]);
       ellipse(minRo, 0, 2, 2);
       fill(col[2]);
       ellipse(maxRo, 0, 2, 2);
 
-      // Anillo que muestra grado 0.
+      // Anillo que muestra grado 0
       stroke(5, 10, 75);
       strokeWeight(0.5);
       noFill();
@@ -475,22 +473,22 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
 
       translate(width/3, height/2);
       rotate(radians(270));
-      rotate(radians(index * 360/365)); // 360 grados / 365 días. 
+      rotate(radians(index * 360/365)); // 360 grados / 365 dias 
       strokeWeight(1);
 
-      // Anillo que muestra grado 0.
+      // Anillo que muestra grado 0
       stroke(5, 10, 75);
       strokeWeight(0.5);
       noFill();
       ellipse(gradoC, 0, 3, 3);
 
       stroke(col[1]);
-      line(maxTemp, 0, minTemp, 0); // Línea que recorre el min y el max.
+      line(maxTemp, 0, minTemp, 0); // linea que recorre el min y el max
       noStroke();
       fill(col[0]);
-      ellipse(maxTemp, 0, 3, 3); // Elipses que muestran el máximo.
+      ellipse(maxTemp, 0, 3, 3); // Elipses que muestran el máximo
       fill(col[2]);
-      ellipse(minTemp, 0, 3, 3); // Ellipse que muestra mínimas.
+      ellipse(minTemp, 0, 3, 3); // Ellipse que muestra minimas
 
       popMatrix();
     }
@@ -502,14 +500,13 @@ No es necesario escribir un método tan largo para que cambie cada mes, se puede
       pushMatrix();
       translate(width/3, height/2);
       rotate(radians(270));
-      rotate(radians(index * 360 / 365)); // 360 grados / 365 días. 
+      rotate(radians(index * 360 / 365)); // 360 grados / 365 dias 
       strokeWeight(0.5);
 
       stroke(0, 0, 100);
       line(330, 0, 340, 0);
 
-      // if para pintar los primeros días de cada mes.
-      // La base de datos contiene la información de numero de día, se puede pintar solo consultando ese dato.
+      // if para pintar los primeros días de cada mes
       if (index == 1 || index == 32 || index == 60 || index == 91|| index == 121 ||
         index == 152 || index == 182 || index == 213 || index == 244 || index == 274 ||
         index == 305 || index == 335 ) {
