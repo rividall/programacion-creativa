@@ -47,45 +47,45 @@
  correspondientes. 
  */
 
-// Declaraciones de variables. 
+// Declaraciones de variables 
 Table tabla; 
 Clase [] objetos;
 
-int ver; // Variable para cambiar las pantallas.
+int ver; // Variable para cambiar las pantallas
 
-// Variables para pasar de mes en mes.
+// variables para pasar de mes en mes
 int prinMes = 0; 
 int finMes = 30;
 int actMes = 1;
 
-// Boolean para pasar de mes en mes.
+// boolean para pasar de mes en mes
 boolean mensual;
 
-// Creación de variables booleanas de información anual.
-boolean fa; // Fechas anuales.
-boolean ta = true; // Temperatura anual.
-boolean roca; // Rocio anual.
-boolean cero; // boolean para activar el anillo cero.
+// Creación de variables booleanas de información anual
+boolean fa; // Fechas anuales 
+boolean ta = true; // Temperatura anual
+boolean roca; // Rocio anual
+boolean cero; // boolean para activar el anillo cero
 
-// Creación de variables booleaneas de información semestral.
-boolean roSem; // rocío Semestral.
-boolean velVieSem; // velocidad del viento semestral.
-boolean tempSem = true; // temperatura semestral que partira viendose.
+// Creación de variables booleaneas de información semestral 
+boolean roSem; // rocío Semestral
+boolean velVieSem; // velocidad del viento semestral 
+boolean tempSem = true; // temperatura semestral que partira viendose 
 
-boolean valor; // boolean para cambiar las variables semestralas.
+boolean valor; // boolean para cambiar las variables semestralas
 
 
-color [] col; //Creo mi Array de colores llamado col.
+color [] col; //Creo mi Array de colores llamado col
 
 
 
 void setup() {
-  size(1280, 700); // Tamaño del canvas.
+  size(1280, 700); // Tamaño del canvas
   ver = 0;
 
-  BDD(); // Agrego la funcion de cargar los datos al setup.
+  BDD(); // Agrego la funcion de cargar los datos al setup
 
-  // Creo mi paleta de colores. 
+  // Creo mi paleta de colores 
   col = new color [3];
   col [0] = color (147, 39, 143); // Morado
   col [1] = color (12, 66, 110); // Celeste medio
@@ -96,18 +96,18 @@ void draw() {
 
   background(0, 0, 25);
 
-  // Creo mi for para recorrer los datos de mi base de datos.
+  // Creo mi for para recorrer los datos de mi base de datos
   for (int index = 0; index < objetos.length; index++) {
 
-    // Datos anuales.
+    // datos anuales
     if (ver == 0) {
       objetos[index].anoInfo();
     }
-    // Datos semestrales.
+    // datos semestrales
     if (ver == 1) {
       objetos[index].semestresInfo();
     }
-    // Datos mensuales.
+    // datos mensuales
     if (ver == 2) {
       mensual = true;
     } else {
@@ -115,7 +115,7 @@ void draw() {
     }
   }
 
-  // Condición para cambiar de mes en mes. 
+  // condición para cambiar de mes en mes 
   if (mensual) {
     int k = prinMes;
     for (int i = (width/finMes-prinMes); i < width-10; i+=width/(finMes-prinMes)) {
@@ -127,7 +127,7 @@ void draw() {
     }
   }
 
-  // Condiciones para definir el tamaño de los meses.
+  // condiciones para definir el tamaño de los meses
   if (actMes == 1) { 
     prinMes = 1;
     finMes = 31;
@@ -302,11 +302,6 @@ void draw() {
   }
 }
 
-/*
-Correcta utilización de función propia para efectuar carga de datos, hace más fácil de 
-leer el codigo para un humano y no cambia el funcionamiento de este.
-*/
-
 void BDD() {
 
   tabla = loadTable("BDD Examen Def.csv", "header"); // Cargo la tabla a processing
@@ -336,8 +331,6 @@ void BDD() {
 void keyPressed() {
 
   // T para temperatura
-  
-  // Acá faltó desactivar el resto de visualizaciones para que no se traslapen.
   if (key == 't') {
     ta = !ta;
     tempSem = !tempSem;
