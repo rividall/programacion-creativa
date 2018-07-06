@@ -3,8 +3,8 @@
 Bruss[] objetos;
 Table tabla;
 int index, n;
-int dias = 1;
-int meses = 0;
+int dias = 0;
+int meses = 1;
 int trimestres = 0;
 int trS, msS, k;
 int trE = 89;
@@ -40,7 +40,7 @@ void setup() {
 
     // Con esas variables construyo un objeto y llevo el index con i.
     objetos[i] = new Bruss(dia, mes, tempMax, tempMin, maxHum, minHum,
-      maxSea, minSea, maxWind, maxGust, preci, eve, i);
+    maxSea, minSea, maxWind, maxGust, preci, eve, i);
   }
 }
 
@@ -48,7 +48,7 @@ void draw() {
   background(243, 241, 241);
   if (meses == 1) {
     k = msS; // Se inicia con el comienzo del mes.
-    for (int i = width / (msE - msS) - 20; i < width; i += width / (msE - msS)) {
+    for (int i = 30; i < width; i += width / ((msE - msS)+1)) {
       // Se declara la posición que tendran los objetos, contando los días de
       // su respectivo mes.
       objetos[k].meses(i); // Se llama al void meses.
@@ -70,8 +70,8 @@ void draw() {
   }
 }
 
-// se cambia de visualizacion, a ver por dia, meses y trimestres
-// Se ven todos los meses y trimestres por separado
+// Se cambia de visualizacion, a ver por dia, meses y trimestres.
+// Se ven todos los meses y trimestres por separado.
 // Hay 3 tipos de datos por meses y por trimestres.
 void keyPressed() {
   if (key == 'k') {
@@ -114,6 +114,11 @@ void keyPressed() {
     trS = 273;
     trE = 364;
   }
+/*
+Este bloque se puede hacer más corto haciendo solo 3 if que permitan sumar la cantidad exacta de dias
+dependiendo de cada mes, meses de 28, 30 y 31 días
+*/
+
 
   if (key == '1') { // Enero
     msS = 0;

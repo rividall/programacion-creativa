@@ -1,5 +1,10 @@
-// Programación creativa - UDD
-// Examen 
+/* Programación creativa - UDD
+ Examen 
+ Gabriela Vergara
+ Descripción General.
+ 
+ 
+*/
 class Bruss {
   //  Se definen las variables globales y de que tipo son.
   String dia;
@@ -143,7 +148,7 @@ class Bruss {
     text("1,2,3,4,5,6,7,8,9,0,q,w para cambiar de mes", 1075, 15);
     text("a, s y d para cambiar de dato", 1143, 25);
     text("d para ver días", 1206, 35);
-    text("l para ver trimestres", 1182, 45);
+    text("l para ver trimestres", 1182, 45); // Acá faltó agregar la "j" para volver al día.
     if (n == 0) { // Se le designaron estados a cada tipo de dato, para verlos
       // por separado.
       // Formación de "estrellas"
