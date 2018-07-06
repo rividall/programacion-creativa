@@ -1,4 +1,4 @@
-**Tromson Noruega 2015**
+**Tromso Noruega 2015**
 
 Teclado:
 
@@ -8,17 +8,17 @@ t = Temperaturas || r = Rocíos máx y mín || v = Velocidad del viento || f  = 
 
 
 
-Se presenta una visualización interactiva de la ciudad de Tromson en Noruega durante el año 2015. Al iniciar el programa se presenta una visualización anual de las temperaturas mínimas y máximas que se puede activar y desactivar con la tecla "t".  Los datos exteriores del anillo pertenecen a las temperaturas máximas de cada día mientras que los datos interiores son las temperaturas mínimas. El anillo azul corresponde a los 0 grados.
+Se presenta una visualización interactiva de la ciudad de Tromso en Noruega durante el año 2015. Al iniciar el programa se presenta una visualización anual de las temperaturas mínimas y máximas que se puede activar y desactivar con la tecla "t".  Los datos exteriores del anillo pertenecen a las temperaturas máximas de cada día mientras que los datos interiores son las temperaturas mínimas. El anillo azul corresponde a los 0 grados.
 
 ![1530810817070](D:\Josefa\Escritorio\eJosefa\1530810817070.png)
 
-Sí uno desactiva las temperaturas y presiona la letra r puede ver los valores máximos y mínimos de rocíos. Al igual que en la visualización de las temperaturas los puntos exteriores corresponden a los rocíos máximos, mientras que las internas a los rocíos mínimos. 
+Sí uno desactiva las temperaturas y presiona la letra r puede ver los valores máximos y mínimos de rocíos. Al igual que en la visualización de las temperaturas los puntos exteriores corresponden a los rocíos máximos, mientras que las internas a los rocíos mínimos.
 
 ![1530810894096](C:\Users\josef\AppData\Local\Temp\1530810894096.png)
 
 
 
-Al ingresar a la visualización semestral se presentan 2 segmentos, uno superior que corresponde al primer semestre del año 2015 y el segundo segmento o inferior que contiene los datos del segundo semestre del mismo año. 
+Al ingresar a la visualización semestral se presentan 2 segmentos, uno superior que corresponde al primer semestre del año 2015 y el segundo segmento o inferior que contiene los datos del segundo semestre del mismo año.
 
 Para la temperatura se muestra una barra clara que muestra las temperaturas máximas y las barras oscuras las temperaturas mínimas.
 
@@ -32,7 +32,7 @@ Para los rocíos se muestra una ellipses oscura que simboliza los puntos máximo
 
 
 
-Se demuestra las variaciones de las velocidades del viento con los anchos de los rectángulos, mientras más anchos más velocidad del viento había y viceversa. 
+Se demuestra las variaciones de las velocidades del viento con los anchos de los rectángulos, mientras más anchos más velocidad del viento había y viceversa.
 
 ![1530812746350](C:\Users\josef\AppData\Local\Temp\1530812746350.png)
 
@@ -46,7 +46,7 @@ Se muestra las temperaturas dibujando líneas según si son máximas o mínimas.
 
 
 
-Estas ellipses muestran las variaciones de humedad según el mes. 
+Estas ellipses muestran las variaciones de humedad según el mes.
 
 ![1530812796014](C:\Users\josef\AppData\Local\Temp\1530812796014.png)
 
@@ -58,6 +58,6 @@ Las velocidades del viento se representan con pelotitas que se mueven en distint
 
 
 
-Finalmente se muestran ellipses con una línea que apunta a las direcciones del viento correspondientes. 
+Finalmente se muestran ellipses con una línea que apunta a las direcciones del viento correspondientes.
 
 ![1530812776764](C:\Users\josef\AppData\Local\Temp\1530812776764.png)
